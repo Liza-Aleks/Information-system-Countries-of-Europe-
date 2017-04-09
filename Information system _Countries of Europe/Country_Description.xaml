@@ -1,0 +1,19 @@
+﻿<Window x:Class="Information_system__Countries_of_Europe.Country_Description"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Information_system__Countries_of_Europe"
+        mc:Ignorable="d"
+        Title="Country_Description" Height="383.155" Width="311.791">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="219,322,0,0" Grid.ColumnSpan="2" Click="button_Click"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="86" VerticalAlignment="Top" Width="152" Grid.ColumnSpan="2" Margin="142,10,0,0"/>
+        <Label x:Name="label" Content="Испания" VerticalAlignment="Top" Height="49" Margin="10,16,91,0" FontSize="20"/>
+
+    </Grid>
+</Window>

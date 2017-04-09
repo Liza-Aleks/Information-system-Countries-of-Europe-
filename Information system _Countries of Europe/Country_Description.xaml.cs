@@ -10,26 +10,27 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Information_system__Countries_of_Europe
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Country_Description.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Country_Description : Window
     {
-        public List<Country> countries = new List<Country>();
-        public MainWindow()
+        MainWindow wnd;
+        public Country_Description(MainWindow w)
         {
+            wnd = w;
             InitializeComponent();
         }
 
-        private void Country_Click(object sender, RoutedEventArgs e)
+        private void button_Click(object sender, RoutedEventArgs e)
         {
-            Country_Description wnd = new Country_Description(this);
-            wnd.Show();
+            MessageBox.Show("Все хорошо!");
         }
+
+       
     }
 }

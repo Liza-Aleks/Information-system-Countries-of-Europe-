@@ -55,7 +55,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Country_Description.xaml.cs">
+      <DependentUpon>Country_Description.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Sight.cs" />
+    <Page Include="Country_Description.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
