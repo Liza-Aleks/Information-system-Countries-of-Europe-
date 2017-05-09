@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace Information_system__Countries_of_Europe
 {
@@ -21,9 +22,44 @@ namespace Information_system__Countries_of_Europe
     public partial class MainWindow : Window
     {
         public List<Country> countries = new List<Country>();
+        public List<Sight> sights = new List<Sight>();
         public MainWindow()
         {
             InitializeComponent();
+
+            using (FileStream fs = new FileStream(@"../../Countries.txt", FileMode.Open, FileAccess.Read))
+            {
+                string[] data;
+                Country cou;
+                StreamReader sr = new StreamReader(fs, Encoding.Default);
+
+                while (!sr.EndOfStream)
+                {
+                    string NameCountry = sr.ReadLine();
+                    string Capital = sr.ReadLine();
+                    string PopCapital = sr.ReadLine();
+                    string[] SightCap = sr.ReadLine().Split(";");
+                    string NameSightCap = SightCap[0];
+                    int YearSightCap = int.Parse(SightCap[1]);
+                    string InfSightCap = SightCap[2];
+
+
+
+
+
+
+
+
+
+                }
+
+             
+
+                sr.Close();
+                fs.Close();
+            }
+
+
         }
 
         private void Country_Click(object sender, RoutedEventArgs e)
@@ -31,5 +67,10 @@ namespace Information_system__Countries_of_Europe
             Country_Description wnd = new Country_Description(this);
             wnd.Show();
         }
+
+            
+
+
+
     }
 }

@@ -14,7 +14,7 @@ namespace Information_system__Countries_of_Europe
 
         public string Information { get; set; }
 
-        public string Photo { get; set; }
+        /*public string Photo { get; set; }*/
 
     }
 }
