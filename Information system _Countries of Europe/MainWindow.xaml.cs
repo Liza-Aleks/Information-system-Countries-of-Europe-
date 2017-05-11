@@ -26,8 +26,8 @@ namespace Information_system__Countries_of_Europe
         public MainWindow()
         {
             InitializeComponent();
-
-            using (FileStream fs = new FileStream(@"../../Countries.txt", FileMode.Open, FileAccess.Read))
+            
+           /* using (FileStream fs = new FileStream(@"../../Countries.txt", FileMode.Open, FileAccess.Read))
             {
                 string[] data;
                 Country cou;
@@ -38,26 +38,16 @@ namespace Information_system__Countries_of_Europe
                     string NameCountry = sr.ReadLine();
                     string Capital = sr.ReadLine();
                     string PopCapital = sr.ReadLine();
-                    string[] SightCap = sr.ReadLine().Split(";");
+                    string[] SightCap = sr.ReadLine().Split(';');
                     string NameSightCap = SightCap[0];
                     int YearSightCap = int.Parse(SightCap[1]);
                     string InfSightCap = SightCap[2];
 
-
-
-
-
-
-
-
-
                 }
-
-             
-
+                
                 sr.Close();
                 fs.Close();
-            }
+            }*/
 
 
         }
@@ -68,9 +58,15 @@ namespace Information_system__Countries_of_Europe
             wnd.Show();
         }
 
-            
+        private void SHOW_Click(object sender, RoutedEventArgs e)
+        {
+            MainPage.Visibility = Visibility.Hidden;
+            CountryPage.Visibility = Visibility.Visible;
+        }
 
+        private void Spain_Click(object sender, RoutedEventArgs e)
+        {
 
-
+        }
     }
 }

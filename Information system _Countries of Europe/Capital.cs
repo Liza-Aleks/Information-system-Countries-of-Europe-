@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace Information_system__Countries_of_Europe
 {
-    class Capital
+    public class Capital
     {
         public string Name { get; set; }
 
         public int Population { get; set; }
 
-        public Sight Sight { get; set; }
+        public string Religion { get; set; }
+
 
 
     }

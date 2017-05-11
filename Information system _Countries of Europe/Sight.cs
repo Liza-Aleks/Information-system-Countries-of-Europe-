@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Information_system__Countries_of_Europe
 {
-    class Sight
+   public  class Sight
     {
         public string Name { get; set; }
 

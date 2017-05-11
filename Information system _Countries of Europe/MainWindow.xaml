@@ -5,9 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Information_system__Countries_of_Europe"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="770.25" Width="1320">
     <Grid>
-        <Button x:Name="Country" Content="Country" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="37,22,0,0" Click="Country_Click"/>
+        <Grid Name="MainPage" Visibility="Visible">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="112*"/>
+                <RowDefinition Height="85*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="864*"/>
+                <ColumnDefinition Width="445*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="SHOW" Grid.Row="0" Content="Админ" Margin="10,5,761,5"  Click="SHOW_Click"/>
+            <Image x:Name="image" Grid.RowSpan="2" Source="C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Map.png" Margin="10,10,82,-10" Grid.Row="1"/>
+            <Button x:Name="Country" Grid.Column="1" Content="Country" VerticalAlignment="Top" Margin="136,3,0,0" Click="Country_Click" Height="20" HorizontalAlignment="Left" Width="75"/>
+            <Button x:Name="Spain" Content="Испания" Grid.Row="2" FontSize="16" HorizontalAlignment="Left" Background="Transparent" BorderThickness="0" VerticalAlignment="Top" Width="90" Margin="56,121,0,0" Click="Spain_Click" Height="30"/>
+
+        </Grid>
+        <StackPanel Name="CountryPage" Grid.RowSpan="3" Grid.ColumnSpan="2" Visibility="Hidden" HorizontalAlignment="Left" Height="299" VerticalAlignment="Top" Width="497" Margin="0,10,0,0">
+            <TextBox x:Name="textBox" Height="63" TextWrapping="Wrap" Margin="173,140,151,0" Text="Ляляляляляляялялялял"/>
+        </StackPanel>
 
     </Grid>
 </Window>
