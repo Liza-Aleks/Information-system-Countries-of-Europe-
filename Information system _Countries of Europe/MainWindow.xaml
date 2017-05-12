@@ -5,27 +5,59 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Information_system__Countries_of_Europe"
         mc:Ignorable="d"
-        Title="MainWindow" Height="770.25" Width="1320">
+        Title="MainWindow" Height="759.75" Width="1374">
     <Grid>
-        <Grid Name="MainPage" Visibility="Visible">
+        <Grid Name="MainPage" Visibility="Visible" Margin="0,-14,0,0" RenderTransformOrigin="0.474,0.485">
             <Grid.RowDefinitions>
-                <RowDefinition Height="10*"/>
-                <RowDefinition Height="112*"/>
-                <RowDefinition Height="85*"/>
+                <RowDefinition Height="56*"/>
+                <RowDefinition Height="98*"/>
+                <RowDefinition Height="69*"/>
+                <RowDefinition Height="44*"/>
+                <RowDefinition Height="44*"/>
+                <RowDefinition Height="44*"/>
+                <RowDefinition Height="44*"/>
+                <RowDefinition Height="44*"/>
+                <RowDefinition Height="310*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="864*"/>
-                <ColumnDefinition Width="445*"/>
+                <ColumnDefinition Width="712*"/>
+                <ColumnDefinition Width="241*"/>
+                <ColumnDefinition Width="352*"/>
+
             </Grid.ColumnDefinitions>
-            <Button x:Name="SHOW" Grid.Row="0" Content="Админ" Margin="10,5,761,5"  Click="SHOW_Click"/>
-            <Image x:Name="image" Grid.RowSpan="2" Source="C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Map.png" Margin="10,10,82,-10" Grid.Row="1"/>
-            <Button x:Name="Country" Grid.Column="1" Content="Country" VerticalAlignment="Top" Margin="136,3,0,0" Click="Country_Click" Height="20" HorizontalAlignment="Left" Width="75"/>
-            <Button x:Name="Spain" Content="Испания" Grid.Row="2" FontSize="16" HorizontalAlignment="Left" Background="Transparent" BorderThickness="0" VerticalAlignment="Top" Width="90" Margin="56,121,0,0" Click="Spain_Click" Height="30"/>
+            <Button x:Name="SHOW" Grid.Row="0" FontSize="16" Content="Админ" Margin="10,23,639,5"  Click="SHOW_Click"/>
+            <Image x:Name="image" Grid.RowSpan="8" Source="C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Map.png" Grid.Row="1"/>
+            <Button x:Name="Spain" Content="Испания" Grid.Row="8" FontSize="16" HorizontalAlignment="Left" Background="Transparent" BorderThickness="0" VerticalAlignment="Top" Width="76" Margin="57,105,0,0" Click="Spain_Click" Height="34" RenderTransformOrigin="0.465,0.442"/>
+
+            <ListBox x:Name="AllCou" HorizontalAlignment="Left" FontSize="19" Height="624" Grid.RowSpan="8" VerticalAlignment="Top" Width="231" Grid.Column="1" Margin="10,54,0,0" Grid.Row="1" SelectionChanged="AllCou_SelectionChanged"/>
+
+            <Image x:Name="Flag" Grid.Column="2" Grid.Row="1" Margin="67,0,68,2"/>
+            <TextBlock  x:Name="CountryName" Grid.Row="2" Grid.Column="2" FontSize="40" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="62" Width="226" Margin="78,3,47,0" ><Run Text="Страна"/></TextBlock>
+
+            <TextBlock x:Name="Capital" Grid.Column="2" Grid.Row="3" FontSize="25" Text="Столица" HorizontalAlignment="Left" VerticalAlignment="Top" Width="157" Margin="197,6,0,0" Height="35"/>
+            <TextBlock x:Name="textBlock"  Grid.Column="2" Grid.Row="3" FontSize="19" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Столица:" VerticalAlignment="Top" Height="30" Width="91" Margin="10,12,0,0"/>
+
+            <TextBlock x:Name="textBlock1"  Grid.Column="2" Grid.Row="4" FontSize="19" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Язык:" VerticalAlignment="Top" Height="30" Width="91" Margin="10,12,0,0"/>
+            <TextBlock x:Name="Language" Grid.Column="2" Grid.Row="4" FontSize="25" Text="Язык" HorizontalAlignment="Left" VerticalAlignment="Top" Width="161" Margin="197,6,0,0" Height="35" RenderTransformOrigin="0.43,0.386"/>
+
+            <TextBlock x:Name="textBlock2"  Grid.Column="2" Grid.Row="5" FontSize="19" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Площадь(тыс. км2):" VerticalAlignment="Top" Height="30" Width="170" Margin="10,10,0,0"/>
+            <TextBlock x:Name="Square" Grid.Column="2" Grid.Row="5" FontSize="25" Text="Цифра"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="162" Margin="197,5,0,0" Height="35" RenderTransformOrigin="0.43,0.386"/>
+
+            <TextBlock x:Name="textBlock3"  Grid.Column="2" Grid.Row="6" FontSize="19" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Население(млн.чел.):" VerticalAlignment="Top" Height="30" Width="187" Margin="10,10,0,0"/>
+            <TextBlock x:Name="Population" Grid.Column="2" Grid.Row="6" FontSize="25" Text="Цифра" HorizontalAlignment="Left" VerticalAlignment="Top" Width="161" Margin="197,4,0,0" Height="35" RenderTransformOrigin="0.43,0.386"/>
+
+            <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" FontSize="19" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="2" Margin="10,10,0,0" Grid.Row="7" Height="26" Width="227" Text="Достопримечательности:"/>
+            <ListBox x:Name="Sights" HorizontalAlignment="Left" Height="284" FontSize="19"   VerticalAlignment="Top" Width="348" Margin="10,10,0,0" Grid.Column="2" Grid.Row="8" SelectionChanged="Sights_SelectionChanged"/>
+           
+            
+            <TextBox x:Name="SearchBox" HorizontalAlignment="Left" Height="35" FontSize="18" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Grid.Column="1" Margin="10,14,0,0" Grid.Row="1" TextChanged="SearchBox_TextChanged"/>
+            <Button x:Name="Search" Content="ОК" HorizontalAlignment="Left" FontSize="19" VerticalAlignment="Top" Width="44" Grid.Column="1" Margin="202,14,0,0" Grid.Row="1" Height="35" Click="Search_Click"/>
+
 
         </Grid>
-        <StackPanel Name="CountryPage" Grid.RowSpan="3" Grid.ColumnSpan="2" Visibility="Hidden" HorizontalAlignment="Left" Height="299" VerticalAlignment="Top" Width="497" Margin="0,10,0,0">
+        <Grid Name="CountryPage" Grid.RowSpan="3" Grid.ColumnSpan="2" Visibility="Hidden" HorizontalAlignment="Left" Height="299" VerticalAlignment="Top" Width="497" Margin="0,10,0,0">
             <TextBox x:Name="textBox" Height="63" TextWrapping="Wrap" Margin="173,140,151,0" Text="Ляляляляляляялялялял"/>
-        </StackPanel>
+        </Grid>
 
     </Grid>
 </Window>

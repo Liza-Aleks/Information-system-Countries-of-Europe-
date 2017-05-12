@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
+using System.Drawing;
 
 namespace Information_system__Countries_of_Europe
 {
@@ -27,27 +28,48 @@ namespace Information_system__Countries_of_Europe
         {
             InitializeComponent();
             
-           /* using (FileStream fs = new FileStream(@"../../Countries.txt", FileMode.Open, FileAccess.Read))
+            using (FileStream fs = new FileStream(@"../../../Countries.txt", FileMode.Open, FileAccess.Read))
             {
                 string[] data;
-                Country cou;
+                
                 StreamReader sr = new StreamReader(fs, Encoding.Default);
 
                 while (!sr.EndOfStream)
                 {
                     string NameCountry = sr.ReadLine();
+                    string NameCountryE = sr.ReadLine();
                     string Capital = sr.ReadLine();
-                    string PopCapital = sr.ReadLine();
-                    string[] SightCap = sr.ReadLine().Split(';');
-                    string NameSightCap = SightCap[0];
-                    int YearSightCap = int.Parse(SightCap[1]);
-                    string InfSightCap = SightCap[2];
+                    string Language = sr.ReadLine();
+                    int Square = int.Parse(sr.ReadLine());
+                    int Pop = int.Parse(sr.ReadLine());
+                    string Flag = sr.ReadLine();
+                    while (true)
+                    {
+                        string[] SightC = sr.ReadLine().Split('@');
+                        string NameSight = SightC[0];
 
-                }
-                
+                        if (NameSight == "")
+                            break;
+                        
+                        int YearSight = int.Parse(SightC[1]);
+                        string CitySight = SightC[2];
+                        string InfSight = SightC[3];
+
+                        sights.Add(new Sight(NameSight, YearSight,InfSight,CitySight,NameCountry, NameCountryE));
+                        if (sr.EndOfStream)
+                            break;
+                    }
+
+                    countries.Add(new Country(NameCountry,NameCountryE, Capital, Language, Square, Pop, Flag));
+                  }
                 sr.Close();
                 fs.Close();
-            }*/
+            }
+
+            foreach (var item in countries)
+            {
+                AllCou.Items.Add(item.ShowName());
+            }
 
 
         }
@@ -64,9 +86,123 @@ namespace Information_system__Countries_of_Europe
             CountryPage.Visibility = Visibility.Visible;
         }
 
+
+        private void Sights_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
+        }
+
+        private void AllCou_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+            foreach (var cou in countries)
+            {
+                if (AllCou.SelectedItem.Equals(cou.Name))
+                {
+                    CountryName.Text = cou.Name;
+                    Capital.Text = cou.Capital;
+                    Language.Text = cou.Language;
+                    /*Flag.Source = item.Flag;*/
+                    Square.Text = cou.Square.ToString();
+                    Population.Text = cou.Population.ToString();
+
+                    Sights.Items.Clear();
+                    foreach (var s in sights)
+                    {
+                        if (cou.Name == s.Country)
+                        {
+                            Sights.Items.Add(s.Show());
+                        }
+                       
+                    }
+                }
+                
+             }
+
+
+            
+        }
+
+        private void Search_Click(object sender, RoutedEventArgs e)
+        {
+            foreach (var item in countries)
+            {
+                if (SearchBox.Text == item.Name)
+                {
+                    AllCou.Items.Clear();
+                    AllCou.Items.Add(item.Name);
+                }
+                else
+                {
+                    AllCou.Items.Clear();
+                    foreach (var c in countries)
+                    {
+                        AllCou.Items.Add(c.Name);
+                    }
+                }
+            }
+        }
+
+        private void SearchBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            foreach (var item in countries)
+            {
+                if (SearchBox.Text == item.Name)
+                {
+                    AllCou.Items.Clear();
+                    AllCou.Items.Add(item.Name);
+
+                }
+                else
+                {
+                    AllCou.Items.Clear();
+                    foreach (var c in countries)
+                    {
+
+                        AllCou.Items.Add(c.Name);
+                    }
+                }
+            }
+        }
+
+
+
         private void Spain_Click(object sender, RoutedEventArgs e)
         {
 
+            foreach (var item in countries)
+            {
+                if (Spain.Name == item.NameEng)
+                {
+                    CountryName.Text = item.Name;
+                    Capital.Text = item.Capital;
+                    Language.Text = item.Language;
+                    /* Flag.Source = item.Flag;*/
+                    Square.Text = item.Square.ToString();
+                    Population.Text = item.Population.ToString();
+
+                    Sights.Items.Clear();
+                    foreach (var s in sights)
+                    {
+                        if (Spain.Name == s.CountryE)
+                        {
+                            Sights.Items.Add(s.Show());
+                        }
+                        else break;
+                    }
+                }
+                else break;
+            }
+
         }
+
+
+
+
+
+
+
+
+
     }
 }
