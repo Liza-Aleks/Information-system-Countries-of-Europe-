@@ -4,11 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Information_system__Countries_of_Europe
 {
-    public class Country
+    [Serializable]
+    public class Country 
     {
-
+        
         public string Name { get; set; }
         public string NameEng { get; set; }
         public string Capital { get; set; }       /*Пока что string, а потом может быть capital, мб лишнее*/
@@ -16,12 +18,13 @@ namespace Information_system__Countries_of_Europe
         public int Square { get; set; }
         public int Population { get; set; }
         public string Flag { get; set; }
+        public List<Sight> LSight { get; set; }
 
         /*public Sight Sight { get; set; }*/
 
         /*public string Neighbor { get; set; }*/
 
-        public Country(string name,string namee, string cap, string lang, int sq, int pop, string flag)
+        public Country(string name,string namee, string cap, string lang, int sq, int pop,string flag, List<Sight> lsight)
         {
             Name = name;
             NameEng = namee;
@@ -30,7 +33,14 @@ namespace Information_system__Countries_of_Europe
             Square = sq;
             Population = pop;
             Flag = flag;
+            LSight = lsight;
+
+
             
+        }
+        public Country()
+        {
+
         }
 
 

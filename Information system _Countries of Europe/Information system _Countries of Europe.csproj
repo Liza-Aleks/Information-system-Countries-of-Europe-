@@ -58,6 +58,8 @@
     <Compile Include="Country_Description.xaml.cs">
       <DependentUpon>Country_Description.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ListCountries.cs" />
+    <Compile Include="Ser.cs" />
     <Compile Include="Sight.cs" />
     <Page Include="Country_Description.xaml">
       <SubType>Designer</SubType>

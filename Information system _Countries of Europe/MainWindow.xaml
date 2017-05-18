@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="759.75" Width="1374">
     <Grid>
-        <Grid Name="MainPage" Visibility="Visible" Margin="0,-14,0,0" RenderTransformOrigin="0.474,0.485">
+        <Grid Name="MainPage" Visibility="Hidden" Margin="0,-14,0,0" RenderTransformOrigin="0.474,0.485">
             <Grid.RowDefinitions>
                 <RowDefinition Height="56*"/>
                 <RowDefinition Height="98*"/>
@@ -48,15 +48,128 @@
 
             <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" FontSize="19" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="2" Margin="10,10,0,0" Grid.Row="7" Height="26" Width="227" Text="Достопримечательности:"/>
             <ListBox x:Name="Sights" HorizontalAlignment="Left" Height="284" FontSize="19"   VerticalAlignment="Top" Width="348" Margin="10,10,0,0" Grid.Column="2" Grid.Row="8" SelectionChanged="Sights_SelectionChanged"/>
-           
-            
+
+
             <TextBox x:Name="SearchBox" HorizontalAlignment="Left" Height="35" FontSize="18" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Grid.Column="1" Margin="10,14,0,0" Grid.Row="1" TextChanged="SearchBox_TextChanged"/>
             <Button x:Name="Search" Content="ОК" HorizontalAlignment="Left" FontSize="19" VerticalAlignment="Top" Width="44" Grid.Column="1" Margin="202,14,0,0" Grid.Row="1" Height="35" Click="Search_Click"/>
 
 
         </Grid>
-        <Grid Name="CountryPage" Grid.RowSpan="3" Grid.ColumnSpan="2" Visibility="Hidden" HorizontalAlignment="Left" Height="299" VerticalAlignment="Top" Width="497" Margin="0,10,0,0">
-            <TextBox x:Name="textBox" Height="63" TextWrapping="Wrap" Margin="173,140,151,0" Text="Ляляляляляляялялялял"/>
+        <Grid Name="Admin" Visibility="Visible" HorizontalAlignment="Left" Height="729" VerticalAlignment="Top" Width="1366">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="334*"/>
+                <ColumnDefinition Width="511*"/>
+                <ColumnDefinition Width="521*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="47*"/>
+                <RowDefinition Height="115*"/>
+                <RowDefinition Height="81*"/>
+                <RowDefinition Height="81*"/>
+                <RowDefinition Height="81*"/>
+                <RowDefinition Height="81*"/>
+                <RowDefinition Height="81*"/>
+                <RowDefinition Height="81*"/>
+                <RowDefinition Height="81*"/>
+
+            </Grid.RowDefinitions>
+            <ListBox x:Name="AllCouAd" HorizontalAlignment="Left" Height="516" FontSize="19" VerticalAlignment="Top" Width="312" Grid.Row="1" Margin="10,75,0,0" Grid.RowSpan="7" SelectionChanged="AllCouAd_SelectionChanged"/>
+            <Button x:Name="Back" Content="Назад" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="19" Width="99" Margin="10,10,0,0" Height="31" Click="Back_Click"/>
+            <TextBox x:Name="SearchAd" TextWrapping="Wrap" Text="" FontSize="19" Margin="10,10,64,59" Grid.Row="1"/>
+
+            <Grid Name="CountryRedAd" Grid.Row="1" Grid.RowSpan="8" Visibility="Visible" Grid.Column="1" Grid.ColumnSpan="2" Margin="6,5,515,-5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80*"/>
+                    <RowDefinition Height="80*"/>
+                    <RowDefinition Height="80*"/>
+                    <RowDefinition Height="80*"/>
+                    <RowDefinition Height="80*"/>
+                    <RowDefinition Height="80*"/>
+                    <RowDefinition Height="80*"/>
+                    <RowDefinition Height="80*"/>
+                    <RowDefinition Height="90*"/>
+                </Grid.RowDefinitions>
+                <TextBlock x:Name="textBlock5" Grid.Row="0" HorizontalAlignment="Left" Height="36" Margin="36,30,0,0" FontSize="19" TextWrapping="Wrap" Text="Название страны:" VerticalAlignment="Top" Width="236"/>
+                <TextBlock x:Name="textBlock6" Grid.Row="1" HorizontalAlignment="Left" Height="36" Margin="36,30,0,0" FontSize="19" TextWrapping="Wrap" Text="Название страны(на англ):" VerticalAlignment="Top" Width="236"/>
+                <TextBlock x:Name="textBlock7" Grid.Row="2" HorizontalAlignment="Left" Height="36" Margin="36,30,0,0" FontSize="19" TextWrapping="Wrap" Text="Столица:" VerticalAlignment="Top" Width="236"/>
+                <TextBlock x:Name="textBlock8"  Grid.Row="3" HorizontalAlignment="Left" Height="36" Margin="36,30,0,0" FontSize="19" TextWrapping="Wrap" Text="Язык:" VerticalAlignment="Top" Width="236"/>
+                <TextBlock x:Name="textBlock9"  Grid.Row="4" HorizontalAlignment="Left" Height="36" Margin="36,30,0,0" FontSize="19" TextWrapping="Wrap" Text="Площадь(в тыс кв.км):" VerticalAlignment="Top" Width="236"/>
+                <TextBlock x:Name="textBlock10" Grid.Row="5" HorizontalAlignment="Left" Height="36" Margin="36,30,0,0" FontSize="19" TextWrapping="Wrap" Text="Население(млн. чел):" VerticalAlignment="Top" Width="236"/>
+                <TextBlock x:Name="textBlock11"  Grid.Row="6" HorizontalAlignment="Left" Height="36" Margin="36,28,0,0" FontSize="19" TextWrapping="Wrap" Text="Флаг:" VerticalAlignment="Top" Width="52"/>
+
+                <TextBox x:Name="CountryAd" Grid.Row="0" HorizontalAlignment="Left" Height="36" TextWrapping="Wrap" Text="" FontSize="20" VerticalAlignment="Top" Width="214" Margin="278,28,0,0" />
+                <TextBox x:Name="CountryEngAd" Grid.Row="1" HorizontalAlignment="Left" Height="36" TextWrapping="Wrap" Text="" FontSize="20" VerticalAlignment="Top" Width="214" Margin="278,28,0,0"  />
+                <TextBox x:Name="CapitalAd" Grid.Row="2" HorizontalAlignment="Left" Height="36" TextWrapping="Wrap" Text="" FontSize="20" VerticalAlignment="Top" Width="214" Margin="278,28,0,0"  />
+                <TextBox x:Name="LangAd" Grid.Row="3" HorizontalAlignment="Left" Height="36" TextWrapping="Wrap" Text="" FontSize="20" VerticalAlignment="Top" Width="214" Margin="278,28,0,0"  />
+                <TextBox x:Name="SquareAd" Grid.Row="4" HorizontalAlignment="Left" Height="36" TextWrapping="Wrap" Text="" FontSize="20" VerticalAlignment="Top" Width="214" Margin="278,28,0,0"  />
+                <TextBox x:Name="PopAd" Grid.Row="5" HorizontalAlignment="Left" Height="36" TextWrapping="Wrap" Text="" FontSize="20" VerticalAlignment="Top" Width="214" Margin="278,28,0,0"  />
+                <TextBox x:Name="FlagAd" Grid.Row="6" HorizontalAlignment="Left" Height="54" TextWrapping="Wrap" Text="" FontSize="20" VerticalAlignment="Top" Width="328" Margin="88,10,0,0"  />
+                <Button x:Name="DownloadImage" Content="Загрузить" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" Width="85" Margin="416,10,0,0" Grid.Row="6" Height="54" Click="DownloadImage_Click"/>
+
+                <Button x:Name="AddSightAd" Content="Добавить достопримечательность" FontSize="19" HorizontalAlignment="Left" VerticalAlignment="Top" Width="491" Margin="10,10,0,0" Grid.Row="7" Height="42" Click="AddSightAd_Click"/>
+                <Button x:Name="EditCountryAd"  Visibility="Visible" Content="Сохранить изменения" HorizontalAlignment="Left" FontSize="19" VerticalAlignment="Top" Width="214" Margin="278,10,0,0" Grid.Row="8" Height="42" Click="EditCountryAd_Click"/>
+                <Button x:Name="SaveCountryAd"  Visibility="Hidden" Content="Сохранить" HorizontalAlignment="Left" FontSize="19" VerticalAlignment="Top" Width="190" Margin="302,10,0,0" Grid.Row="8" Height="42" Click="button_Click"/>
+            </Grid>
+
+            <Grid Name="SightAd" Margin="11,0,10,0" Grid.RowSpan="8" Grid.Column="2" Grid.Row="1" Visibility="Hidden">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="170*"/>
+                </Grid.RowDefinitions>
+                <TextBlock x:Name="textBlock13" TextWrapping="Wrap"   FontSize="20" Margin="129,18,129,65"><Run Text="Достопримечательность:"/></TextBlock>
+                <TextBox x:Name="NameSightAd" TextWrapping="Wrap" Text="" FontSize="21" Margin="10,49,10,25"/>
+
+                <TextBlock x:Name="textBlock14"  Grid.Row="1" TextWrapping="Wrap"   FontSize="20" Margin="176,10,178,67"><Run Text="Год постройки:"/></TextBlock>
+                <TextBox x:Name="YearSightAd"  Grid.Row="1" Text="" TextWrapping="Wrap" FontSize="21" Margin="160,48,160,26" RenderTransformOrigin="0.744,0.438"/>
+
+                <TextBlock x:Name="textBlock15"  Grid.Row="2" TextWrapping="Wrap"   FontSize="20" Margin="160,10,164,69"><Run Text="Местонахождение:"/></TextBlock>
+                <TextBox x:Name="CitySightAd"  Grid.Row="2" Text="" TextWrapping="Wrap" FontSize="21" Margin="115,45,115,29"/>
+
+                <TextBlock x:Name="textBlock16"  Grid.Row="3" TextWrapping="Wrap"   FontSize="20" Margin="123,10,150,78"><Run Text="Краткая информация:"/></TextBlock>
+                <TextBox x:Name="InfSightAd"  Grid.Row="3" Text="" TextWrapping="Wrap" FontSize="21" Margin="0,49,0,78"/>
+                <Button x:Name="SaveSightAd" Content="Сохранить" HorizontalAlignment="Right" FontSize="19" VerticalAlignment="Top" Width="191" Margin="0,273,0,0" Grid.Row="3" Height="42" Click="SaveSightAd_Click"/>
+            </Grid>
+
+            <Button x:Name="SearchCountryAd" Content="OK" HorizontalAlignment="Left" FontSize="19" VerticalAlignment="Top" Width="52" Margin="270,10,0,0" Grid.Row="1" Height="46"/>
+            <StackPanel Name="AddCountrySP" HorizontalAlignment="Left" Width="335" Grid.Row="8" Grid.ColumnSpan="2" Visibility="Visible" Height="81" VerticalAlignment="Top">
+                <Button x:Name="AddCountryAd" Content="Добавить Страну" HorizontalAlignment="Left" FontSize="19" VerticalAlignment="Top" Width="315" Margin="10,10,0,0" Grid.Row="8" Height="42" Click="AddCountryAd_Click"/>
+            </StackPanel>
+            <StackPanel Name="AddDeleteCountrySP" HorizontalAlignment="Left" Height="81" VerticalAlignment="Top" Width="334" Grid.Row="8" Visibility="Hidden">
+                <Button x:Name="DeleteCountryAd" FontSize="19" Content="Удалить" Margin="10,10,183,0" Height="42" Click="DeleteCountryAd_Click"/>
+                <Button x:Name="AddCountryAd1" Content="Добавить страну" Click="AddCountryAd_Click" Margin="164,-42,10,20"  FontSize="19" Height="42"/>
+            </StackPanel>
+
+            <Grid Name="EditSightAd" Grid.Column="2" Grid.RowSpan="9" Visibility="Visible">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="90*"/>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="120*"/>
+                    <RowDefinition Height="50*"/>
+                </Grid.RowDefinitions>
+
+                <ListBox x:Name="EditSightListAd" Height="136" VerticalAlignment="Top" FontSize="19" Margin="10,0" SelectionChanged="EditSightListAd_SelectionChanged"/>
+
+                <TextBlock x:Name="textBlock17" TextWrapping="Wrap" Grid.Row="1"  FontSize="20" Margin="128,10,131,64"><Run Text="Достопримечательность:"/></TextBlock>
+                <TextBox x:Name="EdNameSightAd" TextWrapping="Wrap" Grid.Row="1" Text="" FontSize="21" Margin="10,43,10,0" Height="42" VerticalAlignment="Top"/>
+
+                <TextBlock x:Name="textBlock18"  Grid.Row="2" TextWrapping="Wrap"   FontSize="20" Margin="188,10,188,67"><Run Text="Год постройки:"/></TextBlock>
+                <TextBox x:Name="EdYearSightAd"  Grid.Row="2" Text="" TextWrapping="Wrap" FontSize="21" Margin="160,40,160,0" RenderTransformOrigin="0.744,0.438" Height="42" VerticalAlignment="Top"/>
+
+                <TextBlock x:Name="textBlock19"  Grid.Row="3" TextWrapping="Wrap"   FontSize="20" Margin="160,10,185,56"><Run Text="Местонахождение:"/></TextBlock>
+                <TextBox x:Name="EdCitySightAd"  Grid.Row="3" Text="" TextWrapping="Wrap" FontSize="21" Margin="115,48,115,0" Height="42" VerticalAlignment="Top"/>
+
+                <TextBlock x:Name="textBlock20"  Grid.Row="4" TextWrapping="Wrap"   FontSize="20" Margin="154,10,155,161"><Run Text="Краткая информация:"/></TextBlock>
+                <TextBox x:Name="EdInfSightAd"  Grid.Row="4" Text="" TextWrapping="Wrap" FontSize="21" Margin="10,42,10,0"/>
+
+                <Button x:Name="EdSaveSightAd" Content="Сохранить изменения" HorizontalAlignment="Right" FontSize="19" Width="206" Margin="0,13,10,0" Grid.Row="5" Height="42" VerticalAlignment="Top" Click="EdSaveSightAd_Click"/>
+                <Button x:Name="DeleteSightAd" Content="Удалить" HorizontalAlignment="Right" FontSize="19" Width="206" Margin="0,13,305,0" Grid.Row="5" Height="42" VerticalAlignment="Top" Click="DeleteSightAd_Click" />
+
+            </Grid>
+
         </Grid>
 
     </Grid>

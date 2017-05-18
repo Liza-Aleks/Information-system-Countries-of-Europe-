@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Information_system__Countries_of_Europe
 {
+    [Serializable]
    public  class Sight
     {
         public string Name { get; set; }
@@ -20,8 +21,6 @@ namespace Information_system__Countries_of_Europe
 
         public string CountryE { get; set; }
 
-        /*public string Photo { get; set; }*/
-
         public Sight(string name,int year, string inf, string city,string cou, string coue)
         {
             Name = name;
@@ -31,6 +30,10 @@ namespace Information_system__Countries_of_Europe
             Country = cou;
             CountryE = coue;
 
+
+        }
+        public Sight()
+        {
 
         }
 
