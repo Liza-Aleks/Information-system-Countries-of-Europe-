@@ -11,7 +11,7 @@ namespace Information_system__Countries_of_Europe
     {
         public string Name { get; set; }
 
-        public int Year { get; set; }
+        public string Year { get; set; }
 
         public string Information { get; set; }
 
@@ -21,7 +21,8 @@ namespace Information_system__Countries_of_Europe
 
         public string CountryE { get; set; }
 
-        public Sight(string name,int year, string inf, string city,string cou, string coue)
+        public string SightIm { get; set; }
+        public Sight(string name,string year, string inf, string city,string cou, string coue, string img)
         {
             Name = name;
             Year = year;
@@ -29,6 +30,7 @@ namespace Information_system__Countries_of_Europe
             City = city;
             Country = cou;
             CountryE = coue;
+            SightIm = img;
 
 
         }

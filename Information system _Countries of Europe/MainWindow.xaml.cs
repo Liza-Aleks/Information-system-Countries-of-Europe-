@@ -26,12 +26,12 @@ namespace Information_system__Countries_of_Europe
     public partial class MainWindow : Window
 
     {
-       
+
 
         public ListCountries countries = new ListCountries();
 
         public List<Sight> sights = new List<Sight>();
-      
+
 
         public void Log(string log)
         {
@@ -67,11 +67,6 @@ namespace Information_system__Countries_of_Europe
             }
         }
 
-        private void Country_Click(object sender, RoutedEventArgs e)
-        {
-            Country_Description wnd = new Country_Description(this);
-            wnd.Show();
-        }
 
         private void SHOW_Click(object sender, RoutedEventArgs e)
         {
@@ -82,6 +77,19 @@ namespace Information_system__Countries_of_Europe
 
         private void Sights_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            Sight_Inform wnd = new Sight_Inform(this);
+            wnd.Show();
+            foreach (var item in sights)
+            {
+                if(Sights.SelectedItem.ToString() == item.Show())
+                {
+                    wnd.SightIm.Source = new BitmapImage(new Uri(item.SightIm));
+                    wnd.Name.Text = item.Name;
+                    wnd.Year.Text = item.Year;
+                    wnd.City.Text = item.City;
+                    wnd.Inf.Text = item.Information;
+                }
+            }
             
         }
 
@@ -107,9 +115,9 @@ namespace Information_system__Countries_of_Europe
                             Sights.Items.Add(s.Show());
                         }
                     }
-                } 
-             }  
-           }
+                }
+            }
+        }
 
         private void Search_Click(object sender, RoutedEventArgs e)
         {
@@ -131,28 +139,11 @@ namespace Information_system__Countries_of_Europe
 
             }
         }
-      
+
 
         private void SearchBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            foreach (var item in countries.ListCou)
-            {
-                if (SearchBox.Text == item.Name)
-                {
-                    AllCou.Items.Clear();
-                    AllCou.Items.Add(item.Name);
-
-                }
-                if(SearchBox.Text != item.Name)
-                {
-                    AllCou.Items.Clear();
-                    foreach (var c in countries.ListCou)
-                    {
-                        AllCou.Items.Add(c.Name);
-                    }
-                }
-             
-            }
+           
         }
 
 
@@ -197,7 +188,7 @@ namespace Information_system__Countries_of_Europe
             MainPage.Visibility = Visibility.Visible;
             Admin.Visibility = Visibility.Hidden;
 
-           
+
         }
 
 
@@ -239,6 +230,8 @@ namespace Information_system__Countries_of_Europe
             }
 
 
+
+
         }
 
         /*ДОБАВИТЬ СТРАНУ*/
@@ -256,7 +249,7 @@ namespace Information_system__Countries_of_Europe
             SquareAd.Text = "";
             PopAd.Text = "";
             FlagAd.Text = "";
-            
+
         }
 
         /*ДОБАВИТЬ ДОСТОПРИМЕЧАТЕЛЬНОСТЬ*/
@@ -274,34 +267,61 @@ namespace Information_system__Countries_of_Europe
         /*ЗАГРУЗИТЬ ФОТО*/
         public void DownloadImage_Click(object sender, RoutedEventArgs e)
         {
-            
+
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "jpeg|*.jpg";
             if (openFileDialog.ShowDialog() == true)
             {
                 var fileN = openFileDialog.FileName;
-                var nPath = System.IO.Path.GetFileName(fileN);
-                var curPAth = System.Reflection.Assembly.GetExecutingAssembly().Location;
-                nPath = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(curPAth) + "/img/", nPath);
+                var PathNew = System.IO.Path.GetFileName(fileN);
+                var Pathnow = System.Reflection.Assembly.GetExecutingAssembly().Location;
+                PathNew = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Pathnow) + "/imgFlag/", PathNew);
 
-                File.Copy(fileN, nPath, true);
+                File.Copy(fileN, PathNew, true);
                 BitmapImage img;
-                img = new BitmapImage(new Uri(nPath));
-                FlagAd.Text= nPath;
-                
+                img = new BitmapImage(new Uri(PathNew));
+                FlagAd.Text = PathNew;
+
             }
-           
-       }
+
+        }
+
+        public void SightImDownAd_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "jpeg|*.jpg";
+            if (openFileDialog.ShowDialog() == true)
+            {
+                var fileN = openFileDialog.FileName;
+                var PathNew = System.IO.Path.GetFileName(fileN);
+                var Pathnow = System.Reflection.Assembly.GetExecutingAssembly().Location;
+                PathNew = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Pathnow) + "/imgSight/", PathNew);
+
+                File.Copy(fileN, PathNew, true);
+                BitmapImage img;
+                img = new BitmapImage(new Uri(PathNew));
+                SightImAd.Text = PathNew;
+
+            }
+        }
 
         /*СОХРАНИТЬ ДОСТОПРИМЕЧАТЕЛЬНОСТЬ*/
         private void SaveSightAd_Click(object sender, RoutedEventArgs e)
         {
             SightAd.Visibility = Visibility.Hidden;
-            Sight si = new Sight(NameSightAd.Text, int.Parse(YearSightAd.Text), InfSightAd.Text, CitySightAd.Text, CountryAd.Text, CountryEngAd.Text);
+
+            foreach (var item in countries.ListCou)
+            {
+                if(CountryAd.Text == item.Name)
+                EditSightAd.Visibility = Visibility.Visible;
+            }
+           
+
+            Sight si = new Sight(NameSightAd.Text, YearSightAd.Text, InfSightAd.Text, CitySightAd.Text, CountryAd.Text, CountryEngAd.Text, SightImAd.Text);
             sights.Add(si);
             foreach (var item in countries.ListCou)
             {
-                if(item.Name== si.Country)
+                if (item.Name == si.Country)
                 {
                     item.LSight.Add(si);
                 }
@@ -319,14 +339,20 @@ namespace Information_system__Countries_of_Europe
                     }
                 }
             }
-            
+
             Ser.Serialize(countries);
+
+
         }
 
         /*СОХРАНИТЬ СТРАНУ*/
-        private void button_Click(object sender, RoutedEventArgs e)  
+        private void button_Click(object sender, RoutedEventArgs e)
         {
-            CountryRedAd.Visibility = Visibility.Hidden;
+            SaveCountryAd.Visibility = Visibility.Hidden;
+            EditCountryAd.Visibility = Visibility.Visible;
+
+            EditSightAd.Visibility = Visibility.Visible;
+
             List<Sight> sightscou = new List<Sight>();
             foreach (var item in sights)
             {
@@ -335,39 +361,55 @@ namespace Information_system__Countries_of_Europe
                     sightscou.Add(item);
                 }
             }
-             Country cou = new Country(CountryAd.Text, CountryEngAd.Text, CapitalAd.Text, LangAd.Text, int.Parse(SquareAd.Text), int.Parse(PopAd.Text),FlagAd.Text , sightscou);
-            
+            Country cou = new Country(CountryAd.Text, CountryEngAd.Text, CapitalAd.Text, LangAd.Text, int.Parse(SquareAd.Text), int.Parse(PopAd.Text), FlagAd.Text, sightscou);
+
             countries.ListCou.Add(cou);
 
             AllCouAd.Items.Add(cou.Name);
             AllCou.Items.Add(cou.Name);
 
             Ser.Serialize(countries);
-            
-    }
+
+          
+
+        }
 
         /*УДАЛИТЬ СТРАНУ */
         private void DeleteCountryAd_Click(object sender, RoutedEventArgs e)
         {
-            foreach (var item in countries.ListCou)
+            if (AllCouAd.SelectedItem != null)
             {
-                if (AllCouAd.SelectedItem.ToString() == item.Name)
+                foreach (var item in countries.ListCou)
                 {
-                    int i = countries.ListCou.IndexOf(item);
-                    countries.ListCou.RemoveAt(i);
-                    break;
+                    if (AllCouAd.SelectedItem.ToString() == item.Name)
+                    {
+                        int i = countries.ListCou.IndexOf(item);
+                        countries.ListCou.RemoveAt(i);
+                        break;
+                    }
                 }
-            }
-            AllCouAd.Items.Clear();
-            AllCou.Items.Clear();
-            foreach (var item in countries.ListCou)
-            {
-                AllCouAd.Items.Add(item.Name);
-                AllCou.Items.Add(item.Name);
-            }
+                AllCouAd.Items.Clear();
+                AllCou.Items.Clear();
+                foreach (var item in countries.ListCou)
+                {
+                    AllCouAd.Items.Add(item.Name);
+                    AllCou.Items.Add(item.Name);
+                }
 
-            Ser.Serialize(countries);
-        }
+                Ser.Serialize(countries);
+
+
+                CountryAd.Text = "";
+                CountryEngAd.Text = "";
+                CapitalAd.Text = "";
+                LangAd.Text = "";
+                SquareAd.Text = "";
+                PopAd.Text = "";
+                FlagAd.Text = "";
+            }
+            else
+                MessageBox.Show("Выберите страну", "", MessageBoxButton.OK, MessageBoxImage.Warning);
+      }
 
         /*УДАЛИТЬ ДОСТОПРИМЕЧАТЕЛЬНОСТЬ*/
         private void DeleteSightAd_Click(object sender, RoutedEventArgs e)
@@ -469,7 +511,7 @@ namespace Information_system__Countries_of_Europe
                     if (EditSightListAd.SelectedItem.ToString() == item.Show())
                     {
                         item.Name = EdNameSightAd.Text;
-                        item.Year = int.Parse(EdYearSightAd.Text);
+                        item.Year = EdYearSightAd.Text;
                         item.City = EdCitySightAd.Text;
                         item.Information = EdInfSightAd.Text;
                     }
@@ -493,7 +535,7 @@ namespace Information_system__Countries_of_Europe
         /*ЛИСТ С ДОСТОПРИМЕЧАТЕЛЬНОСТЯМИ У ОДНОЙ СТРАНЫ */
         private void EditSightListAd_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            
             foreach (var item in sights)
             {
                 if (EditSightListAd.SelectedItem != null)
@@ -509,10 +551,37 @@ namespace Information_system__Countries_of_Europe
             }
         }
 
+        /*ПОИСК ПО ЛИСТЕ В АДМИНКЕ */
+        private void SearchAd_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            List<Country> c = new List<Country>();
+           
+            if (SearchAd.Text != null)
+            {
+                AllCouAd.Items.Clear();
 
-        
+                foreach (var item in countries.ListCou)
+                {
+                    if (item.Name.Contains(SearchAd.Text))
+                    if(!c.Contains(item))
+                    {
+                        c.Add(item);
+                    }
+                    else
+                    {
+                       c.Clear();
+                        foreach (var cou in countries.ListCou)
+                        {
+                           c.Add(item);
+                        }
+                     }
+                  }
+                foreach (var item in c)
+                {
+                    AllCouAd.Items.Add(item.ShowName());
+                }
+            }
 
-
-       
+        }
     }
 }

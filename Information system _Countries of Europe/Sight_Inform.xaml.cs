@@ -15,22 +15,22 @@ using System.Windows.Shapes;
 namespace Information_system__Countries_of_Europe
 {
     /// <summary>
-    /// Логика взаимодействия для Country_Description.xaml
+    /// Логика взаимодействия для Sight_Inform.xaml
     /// </summary>
-    public partial class Country_Description : Window
+    public partial class Sight_Inform : Window
     {
         MainWindow wnd;
-        public Country_Description(MainWindow w)
+    
+        public Sight_Inform(MainWindow w)
         {
             wnd = w;
             InitializeComponent();
+
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Все хорошо!");
-        }
 
-       
+        }
     }
 }
