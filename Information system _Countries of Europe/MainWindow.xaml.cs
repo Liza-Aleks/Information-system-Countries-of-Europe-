@@ -143,7 +143,33 @@ namespace Information_system__Countries_of_Europe
 
         private void SearchBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-           
+            List<Country> c = new List<Country>();
+
+            if (SearchBox.Text != null)
+            {
+                AllCou.Items.Clear();
+
+                foreach (var item in countries.ListCou)
+                {
+                    if (item.Name.Contains(SearchBox.Text))
+                        if (!c.Contains(item))
+                        {
+                            c.Add(item);
+                        }
+                        else
+                        {
+                            c.Clear();
+                            foreach (var cou in countries.ListCou)
+                            {
+                                c.Add(item);
+                            }
+                        }
+                }
+                foreach (var item in c)
+                {
+                    AllCou.Items.Add(item.ShowName());
+                }
+            }
         }
 
 
