@@ -19,17 +19,14 @@ namespace Information_system__Countries_of_Europe
 
         public string Country { get; set; }
 
-        public string CountryE { get; set; }
-
         public string SightIm { get; set; }
-        public Sight(string name,string year, string inf, string city,string cou, string coue, string img)
+        public Sight(string name,string year, string inf, string city,string cou, string img)
         {
             Name = name;
             Year = year;
             Information = inf;
             City = city;
             Country = cou;
-            CountryE = coue;
             SightIm = img;
 
 
@@ -45,6 +42,9 @@ namespace Information_system__Countries_of_Europe
             return string.Format("{0},{1}",Name,City);
         }
 
-
+        public string ShowC()
+        {
+            return string.Format("{0},{1},{2}", Name, City,Country);
+        }
     }
 }

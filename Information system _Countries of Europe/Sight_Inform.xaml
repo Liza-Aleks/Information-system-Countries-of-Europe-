@@ -14,7 +14,7 @@
             <RowDefinition Height="25*"/>
             <RowDefinition Height="130*"/>
         </Grid.RowDefinitions>
-        <Image x:Name="SightIm" HorizontalAlignment="Left" Height="194" VerticalAlignment="Top" Width="378"/>
+        <Image x:Name="SightIm" Height="194" VerticalAlignment="Top" Margin="30,0,0,0" HorizontalAlignment="Left" Width="310"/>
         <TextBlock x:Name="Name" HorizontalAlignment="Left" FontSize="19" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="10,5,0,0" Grid.Row="1" Width="330" Height="36"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" FontSize="19" Text="Год постройки:" VerticalAlignment="Top" Margin="10,10,0,0" Grid.Row="2" Width="148" Height="27"/>
         <TextBlock x:Name="Year" HorizontalAlignment="Left" TextWrapping="Wrap" FontSize="19" VerticalAlignment="Top" Margin="163,10,0,0" Grid.Row="2" Width="127" Height="27"><Run Text=""/></TextBlock>

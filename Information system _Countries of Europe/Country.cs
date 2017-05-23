@@ -12,11 +12,10 @@ namespace Information_system__Countries_of_Europe
     {
         
         public string Name { get; set; }
-        public string NameEng { get; set; }
         public string Capital { get; set; }       /*Пока что string, а потом может быть capital, мб лишнее*/
         public string Language { get; set; }
-        public int Square { get; set; }
-        public int Population { get; set; }
+        public float Square { get; set; }
+        public float Population { get; set; }
         public string Flag { get; set; }
         public List<Sight> LSight { get; set; }
 
@@ -24,10 +23,9 @@ namespace Information_system__Countries_of_Europe
 
         /*public string Neighbor { get; set; }*/
 
-        public Country(string name,string namee, string cap, string lang, int sq, int pop,string flag, List<Sight> lsight)
+        public Country(string name, string cap, string lang, float sq, float pop,string flag, List<Sight> lsight)
         {
             Name = name;
-            NameEng = namee;
             Capital = cap;
             Language = lang;
             Square = sq;

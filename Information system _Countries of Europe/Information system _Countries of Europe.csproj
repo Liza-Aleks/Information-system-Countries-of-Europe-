@@ -55,12 +55,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CountryAd.xaml.cs">
+      <DependentUpon>CountryAd.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ListCountries.cs" />
     <Compile Include="Ser.cs" />
     <Compile Include="Sight.cs" />
+    <Compile Include="SightAd.xaml.cs">
+      <DependentUpon>SightAd.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Sight_Inform.xaml.cs">
       <DependentUpon>Sight_Inform.xaml</DependentUpon>
     </Compile>
+    <Page Include="CountryAd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -75,6 +85,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="SightAd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Sight_Inform.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
