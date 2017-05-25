@@ -114,29 +114,29 @@ namespace Information_system__Countries_of_Europe
         }
 
         /*ДОБАВИТЬ СТРАНУ*/
-        private void AddCountryAd_Click(object sender, RoutedEventArgs e)
-        {
-            try {
-                CountryRedAd.Visibility = Visibility.Visible;
-                SaveCountryAd.Visibility = Visibility.Visible;
-                EditCountryAd.Visibility = Visibility.Hidden;
-                EditSightAd.Visibility = Visibility.Hidden;
+        //private void AddCountryAd_Click(object sender, RoutedEventArgs e)
+        //{
+        //    try {
+        //        CountryRedAd.Visibility = Visibility.Visible;
+        //        SaveCountryAd.Visibility = Visibility.Visible;
+        //        EditCountryAd.Visibility = Visibility.Hidden;
+        //        EditSightAd.Visibility = Visibility.Hidden;
 
-                CountryNameAd.Text = "";
-                CapitalAd.Text = "";
-                LangAd.Text = "";
-                SquareAd.Text = "";
-                PopAd.Text = "";
-                FlagAd.Text = "";
+        //        CountryNameAd.Text = "";
+        //        CapitalAd.Text = "";
+        //        LangAd.Text = "";
+        //        SquareAd.Text = "";
+        //        PopAd.Text = "";
+        //        FlagAd.Text = "";
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "", MessageBoxButton.OK, MessageBoxImage.Warning);
-                Log.L("Ошибка! " + ex.Message);
-            }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(ex.Message, "", MessageBoxButton.OK, MessageBoxImage.Warning);
+        //        Log.L("Ошибка! " + ex.Message);
+        //    }
 
-        }
+        //}
 
         /*ДОБАВИТЬ ДОСТОПРИМЕЧАТЕЛЬНОСТЬ*/
         private void AddSightAd_Click(object sender, RoutedEventArgs e)
@@ -269,99 +269,99 @@ namespace Information_system__Countries_of_Europe
         }
 
         /*СОХРАНИТЬ СТРАНУ*/
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-            try {
-                SaveCountryAd.Visibility = Visibility.Hidden;
-                EditCountryAd.Visibility = Visibility.Visible;
+        //private void button_Click(object sender, RoutedEventArgs e)
+        //{
+        //    try {
+        //        SaveCountryAd.Visibility = Visibility.Hidden;
+        //        EditCountryAd.Visibility = Visibility.Visible;
 
-                EditSightAd.Visibility = Visibility.Visible;
+        //        EditSightAd.Visibility = Visibility.Visible;
 
-                List<Sight> sightscou = new List<Sight>();
-                foreach (var item in sights)
-                {
-                    if (CountryNameAd.Text == item.Country)
-                    {
-                        sightscou.Add(item);
-                    }
-                }
+        //        List<Sight> sightscou = new List<Sight>();
+        //        foreach (var item in sights)
+        //        {
+        //            if (CountryNameAd.Text == item.Country)
+        //            {
+        //                sightscou.Add(item);
+        //            }
+        //        }
 
-                Country cou = new Country(CountryNameAd.Text, CapitalAd.Text, LangAd.Text, float.Parse(SquareAd.Text), float.Parse(PopAd.Text), FlagAd.Text, sightscou);
+        //        Country cou = new Country(CountryNameAd.Text, CapitalAd.Text, LangAd.Text, float.Parse(SquareAd.Text), float.Parse(PopAd.Text), FlagAd.Text, sightscou);
                
-                Log.L("Добавлена страна " + cou.Name + "; " + DateTime.Now);
-                countries.ListCou.Add(cou);
+        //        Log.L("Добавлена страна " + cou.Name + "; " + DateTime.Now);
+        //        countries.ListCou.Add(cou);
 
-                Sort.C(countries.ListCou);
+        //        Sort.C(countries.ListCou);
 
-                AllCouAd.Items.Clear();
-                foreach (var item in countries.ListCou)
-                {
-                    AllCouAd.Items.Add(item.ShowName());
-                }
+        //        AllCouAd.Items.Clear();
+        //        foreach (var item in countries.ListCou)
+        //        {
+        //            AllCouAd.Items.Add(item.ShowName());
+        //        }
 
-                EditSightListAd.Items.Clear();
-                foreach (var item in sights)
-                {
-                    if (cou.Name == item.Country)
-                        EditSightListAd.Items.Add(item.Show());
-                }
+        //        EditSightListAd.Items.Clear();
+        //        foreach (var item in sights)
+        //        {
+        //            if (cou.Name == item.Country)
+        //                EditSightListAd.Items.Add(item.Show());
+        //        }
 
-                Ser.Serialize(countries);
+        //        Ser.Serialize(countries);
 
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message, "", MessageBoxButton.OK, MessageBoxImage.Warning);
-                Log.L("Ошибка! " + ex.Message);
-            }
+        //    }
+        //    catch(Exception ex)
+        //    {
+        //        MessageBox.Show(ex.Message, "", MessageBoxButton.OK, MessageBoxImage.Warning);
+        //        Log.L("Ошибка! " + ex.Message);
+        //    }
 
 
-        }
+        //}
 
         /*УДАЛИТЬ СТРАНУ */
-        private void DeleteCountryAd_Click(object sender, RoutedEventArgs e)
-        {
-            try {
-                if (AllCouAd.SelectedItem != null)
-                {
-                    foreach (var item in countries.ListCou)
-                    {
-                        if (AllCouAd.SelectedItem.ToString() == item.Name)
-                        {
-                            int i = countries.ListCou.IndexOf(item);
-                            countries.ListCou.RemoveAt(i);
-                            Log.L("Удалена страна" + item.Name + "; " + DateTime.Now);
-                            break;
+        //private void DeleteCountryAd_Click(object sender, RoutedEventArgs e)
+        //{
+        //    try {
+        //        if (AllCouAd.SelectedItem != null)
+        //        {
+        //            foreach (var item in countries.ListCou)
+        //            {
+        //                if (AllCouAd.SelectedItem.ToString() == item.Name)
+        //                {
+        //                    int i = countries.ListCou.IndexOf(item);
+        //                    countries.ListCou.RemoveAt(i);
+        //                    Log.L("Удалена страна" + item.Name + "; " + DateTime.Now);
+        //                    break;
 
-                        }
-                    }
-                    AllCouAd.Items.Clear();
+        //                }
+        //            }
+        //            AllCouAd.Items.Clear();
 
-                    foreach (var item in countries.ListCou)
-                    {
-                        AllCouAd.Items.Add(item.Name);
+        //            foreach (var item in countries.ListCou)
+        //            {
+        //                AllCouAd.Items.Add(item.Name);
 
-                    }
+        //            }
 
-                    Ser.Serialize(countries);
+        //            Ser.Serialize(countries);
 
 
-                    CountryNameAd.Text = "";
-                    CapitalAd.Text = "";
-                    LangAd.Text = "";
-                    SquareAd.Text = "";
-                    PopAd.Text = "";
-                    FlagAd.Text = "";
-                }
-                else
-                    MessageBox.Show("Выберите страну", "", MessageBoxButton.OK, MessageBoxImage.Warning);
-              }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "", MessageBoxButton.OK, MessageBoxImage.Warning);
-                Log.L("Ошибка! " + ex.Message);
-            }
-        }
+        //            CountryNameAd.Text = "";
+        //            CapitalAd.Text = "";
+        //            LangAd.Text = "";
+        //            SquareAd.Text = "";
+        //            PopAd.Text = "";
+        //            FlagAd.Text = "";
+        //        }
+        //        else
+        //            MessageBox.Show("Выберите страну", "", MessageBoxButton.OK, MessageBoxImage.Warning);
+        //      }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(ex.Message, "", MessageBoxButton.OK, MessageBoxImage.Warning);
+        //        Log.L("Ошибка! " + ex.Message);
+        //    }
+        //}
 
         /*УДАЛИТЬ ДОСТОПРИМЕЧАТЕЛЬНОСТЬ*/
         private void DeleteSightAd_Click(object sender, RoutedEventArgs e)
