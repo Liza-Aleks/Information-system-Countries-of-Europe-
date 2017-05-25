@@ -5,19 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Information_system__Countries_of_Europe"
         mc:Ignorable="d"
+        ResizeMode="NoResize"
         Title="MainWindow" Height="759.75" Width="1374">
+
     <Grid>
-        <Grid Name="MainPage" Visibility="Hidden" Margin="0,-14,0,0" RenderTransformOrigin="0.474,0.485">
+        <Grid Name="Admin" Visibility="Hidden" HorizontalAlignment="Left" Height="729" VerticalAlignment="Top" Width="1366">
+            <Frame x:Name="Main" NavigationUIVisibility="Hidden"/>
+            <Button x:Name="CountryPage" Content="Страны"  Background="Transparent" BorderThickness="0" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Top" Width="219" Margin="199,10,0,0" Click="CountryPage_Click" Height="40"/>
+            <Button x:Name="SightPage" Content="Достопримечательности" Background="Transparent" BorderThickness="0" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Top" Width="319" Margin="423,10,0,0" Click="SightPage_Click" Height="40"/>
+
+            <Button x:Name="Back" Content="Назад" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="19" Width="76" Margin="10,10,0,0" Height="27" Click="Back_Click"/>
+
+        </Grid>
+        <Grid Name="MainPage" Visibility="Visible" Margin="0,-14,0,0" RenderTransformOrigin="0.474,0.485">
             <Grid.RowDefinitions>
-                <RowDefinition Height="56*"/>
-                <RowDefinition Height="98*"/>
-                <RowDefinition Height="69*"/>
+                <RowDefinition Height="55*"/>
+                <RowDefinition Height="97*"/>
+                <RowDefinition Height="68*"/>
+                <RowDefinition Height="43*"/>
                 <RowDefinition Height="44*"/>
                 <RowDefinition Height="44*"/>
-                <RowDefinition Height="44*"/>
-                <RowDefinition Height="44*"/>
-                <RowDefinition Height="44*"/>
-                <RowDefinition Height="310*"/>
+                <RowDefinition Height="18*"/>
+                <RowDefinition Height="25*"/>
+                <RowDefinition Height="43*"/>
+                <RowDefinition Height="306*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="712*"/>
@@ -26,13 +37,13 @@
 
             </Grid.ColumnDefinitions>
             <Button x:Name="SHOW" Grid.Row="0" FontSize="16" Content="Админ" Margin="10,23,639,5"  Click="SHOW_Click"/>
-            <Image x:Name="image" Grid.RowSpan="8" Source="C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Map.png" Grid.Row="1"/>
-            <Button x:Name="Spain" Content="Испания" Grid.Row="8" FontSize="16" HorizontalAlignment="Left" Background="Transparent" BorderThickness="0" VerticalAlignment="Top" Width="76" Margin="57,105,0,0" Click="Spain_Click" Height="34" RenderTransformOrigin="0.465,0.442"/>
+            <Image x:Name="image" Grid.RowSpan="9" Source="C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Map.png" Grid.Row="1"/>
 
-            <ListBox x:Name="AllCou" HorizontalAlignment="Left" FontSize="19" Height="624" Grid.RowSpan="8" VerticalAlignment="Top" Width="231" Grid.Column="1" Margin="10,54,0,0" Grid.Row="1" SelectionChanged="AllCou_SelectionChanged"/>
+
+            <ListBox x:Name="AllCou" HorizontalAlignment="Left" FontSize="19" Height="624" Grid.RowSpan="9" VerticalAlignment="Top" Width="231" Grid.Column="1" Margin="10,54,0,0" Grid.Row="1" SelectionChanged="AllCou_SelectionChanged"/>
 
             <Image x:Name="Flag" Grid.Column="2" Margin="10,0,15,2" Grid.RowSpan="2" Height="140" VerticalAlignment="Bottom"/>
-            <TextBlock  x:Name="CountryName" Grid.Row="2" Grid.Column="2" FontSize="40" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="62" Width="226" Margin="78,3,47,0" ><Run Text=""/></TextBlock>
+            <TextBlock  x:Name="CountryName" Grid.Row="2" Grid.Column="2" FontSize="40" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="62" Width="226" Margin="87,3,56,0" ><Run Text=""/></TextBlock>
 
             <TextBlock x:Name="Capital" Grid.Column="2" Grid.Row="3" FontSize="25" Text="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="157" Margin="197,6,0,0" Height="35"/>
             <TextBlock x:Name="textBlock"  Grid.Column="2" Grid.Row="3" FontSize="19" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Столица:" VerticalAlignment="Top" Height="30" Width="91" Margin="10,12,0,0"/>
@@ -43,26 +54,319 @@
             <TextBlock x:Name="textBlock2"  Grid.Column="2" Grid.Row="5" FontSize="19" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Площадь(тыс. км2):" VerticalAlignment="Top" Height="30" Width="170" Margin="10,10,0,0"/>
             <TextBlock x:Name="Square" Grid.Column="2" Grid.Row="5" FontSize="25" Text=""  HorizontalAlignment="Left" VerticalAlignment="Top" Width="162" Margin="197,5,0,0" Height="35" RenderTransformOrigin="0.43,0.386"/>
 
-            <TextBlock x:Name="textBlock3"  Grid.Column="2" Grid.Row="6" FontSize="19" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Население(млн.чел.):" VerticalAlignment="Top" Height="30" Width="187" Margin="10,10,0,0"/>
-            <TextBlock x:Name="Population" Grid.Column="2" Grid.Row="6" FontSize="25" Text="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="161" Margin="197,4,0,0" Height="35" RenderTransformOrigin="0.43,0.386"/>
+            <TextBlock x:Name="textBlock3"  Grid.Column="2" Grid.Row="6" FontSize="19" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Население(млн.чел.):" VerticalAlignment="Top" Height="30" Width="187" Margin="10,10,0,0" Grid.RowSpan="2"/>
+            <TextBlock x:Name="Population" Grid.Column="2" Grid.Row="6" FontSize="25" Text="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="161" Margin="197,4,0,0" Height="35" RenderTransformOrigin="0.43,0.386" Grid.RowSpan="2"/>
 
-            <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" FontSize="19" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="2" Margin="10,10,0,0" Grid.Row="7" Height="26" Width="227" Text="Достопримечательности:"/>
-            <ListBox x:Name="Sights" HorizontalAlignment="Left" Height="284" FontSize="19"   VerticalAlignment="Top" Width="348" Margin="10,10,0,0" Grid.Column="2" Grid.Row="8" SelectionChanged="Sights_SelectionChanged"/>
+            <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" FontSize="19" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="2" Margin="10,10,0,0" Grid.Row="8" Height="26" Width="227" Text="Достопримечательности:"/>
+            <ListBox x:Name="Sights" HorizontalAlignment="Left" Height="284" FontSize="19"   VerticalAlignment="Top" Width="348" Margin="10,10,0,0" Grid.Column="2" Grid.Row="9" SelectionChanged="Sights_SelectionChanged"/>
 
 
             <TextBox x:Name="SearchBox" HorizontalAlignment="Left" Height="35" FontSize="18" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Grid.Column="1" Margin="10,14,0,0" Grid.Row="1" TextChanged="SearchBox_TextChanged"/>
             <Button x:Name="Search" Content="ОК" HorizontalAlignment="Left" FontSize="19" VerticalAlignment="Top" Width="44" Grid.Column="1" Margin="202,14,0,0" Grid.Row="1" Height="35"/>
 
+            <StackPanel Margin="57,93,595,153" Grid.Row="9" MouseUp="Country_MouseUp" RenderTransformOrigin="0.5,0.5">
+                <StackPanel.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-19.993"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </StackPanel.RenderTransform>
+                <TextBlock x:Name="Spain" Text="Испания" FontSize="17" Background="Transparent" VerticalAlignment="Center"  Height="41" Foreground="Black" RenderTransformOrigin="0.474,0.738"/>
+                <TextBlock  x:Name="idSpain" Text="3" FontSize="17"  Visibility="Hidden" HorizontalAlignment="Left" Background="Transparent" VerticalAlignment="Top" Width="76"  Height="34"/>
+            </StackPanel>
+
+            <StackPanel Margin="-7,87,660,191" Grid.Row="9" MouseUp="Country_MouseUp" RenderTransformOrigin="0.5,0.5">
+                <StackPanel.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-60.486"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </StackPanel.RenderTransform>
+                <TextBlock x:Name="Portugal" Text="Португалия" FontSize="17" Background="Transparent" VerticalAlignment="Top"  Height="32" Foreground="Black" HorizontalAlignment="Left" Width="90"/>
+
+            </StackPanel>
+
+            <StackPanel Margin="167,10,503,213" Grid.Row="9" MouseUp="Country_MouseUp" RenderTransformOrigin="0.5,0.5">
+                <TextBlock x:Name="France" Text="Франция" FontSize="17" Background="Transparent" VerticalAlignment="Center"  Height="32" Foreground="Black" RenderTransformOrigin="0.5,0.5" Margin="0,0,-2,0"/>
+                <TextBlock  x:Name="idFr" Text="3" FontSize="17"  Visibility="Hidden" HorizontalAlignment="Center" Background="Transparent" VerticalAlignment="Center" Width="76"  Height="34"/>
+            </StackPanel>
+
+            <StackPanel Margin="252,112,402,166" Grid.Row="9" MouseUp="Country_MouseUp" RenderTransformOrigin="0.5,0.5">
+                <StackPanel.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="56.152"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </StackPanel.RenderTransform>
+                <TextBlock x:Name="Italy" Text="Италия" FontSize="17" Background="Transparent" VerticalAlignment="Top"  Height="34" Foreground="Black" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right" Width="70" Margin="0,0,10,0"/>
+            </StackPanel>
+
+
+            <StackPanel Margin="257,44,475,233" Grid.Row="9" MouseUp="Country_MouseUp" RenderTransformOrigin="0.5,0.5">
+                <TextBlock x:Name="Swir" Text="Швейцария" FontSize="17"  Visibility="Collapsed" Background="Transparent"  HorizontalAlignment="Center" VerticalAlignment="Top"  Height="32" Foreground="Black" RenderTransformOrigin="0.5,0.5"/>
+                <TextBlock  x:Name="idSw" Text="5" FontSize="17"  Visibility="Visible" HorizontalAlignment="Left" Background="Transparent" VerticalAlignment="Center" Width="16"  Height="27"/>
+            </StackPanel>
+
+            <StackPanel Margin="283,5,375,297" Grid.Row="8" MouseUp="Country_MouseUp" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
+                <StackPanel.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-52.831"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </StackPanel.RenderTransform>
+                <TextBlock x:Name="Germ" Text="Германия" FontSize="17" Background="Transparent" VerticalAlignment="Center"  Height="39" Foreground="Black" RenderTransformOrigin="0.504,1.01"/>
+            </StackPanel>
+
+            <StackPanel Margin="295,44,376,233" Grid.Row="9" MouseUp="Country_MouseUp" RenderTransformOrigin="0.5,0.5">
+                <TextBlock x:Name="Austria" Text="Австрия" FontSize="17" Background="Transparent" VerticalAlignment="Center"  Height="26" Foreground="Black" RenderTransformOrigin="0.5,0.5" Margin="6,0,0,0"/>
+            </StackPanel>
+
+            <StackPanel Margin="369,0,295,295" Grid.Row="8" MouseUp="Country_MouseUp" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
+                <TextBlock x:Name="Poland" Text="Польша" FontSize="17" Background="Transparent" VerticalAlignment="Center" HorizontalAlignment="Center" Height="31"  RenderTransformOrigin="0.516,0.789" Margin="8,0,3,0" Width="70"/>
+            </StackPanel>
+
+            <StackPanel Margin="325,11,346,266" Grid.Row="9" MouseUp="Country_MouseUp" RenderTransformOrigin="0.5,0.5">
+                <TextBlock x:Name="Chezh" Text="Чехия" FontSize="17" Background="Transparent" VerticalAlignment="Center"  Height="26" RenderTransformOrigin="0.5,0.5" Margin="6,0,10,0"/>
+            </StackPanel>
+
+            <StackPanel Margin="369,55,303,222" Grid.Row="9" MouseUp="Country_MouseUp" RenderTransformOrigin="0.5,0.5">
+                <TextBlock x:Name="Hungary" Text="Венгрия" FontSize="17" Background="Transparent" VerticalAlignment="Center"  Height="21" RenderTransformOrigin="0.5,0.5" Margin="6,0,0,0"/>
+            </StackPanel>
+
+            <StackPanel Margin="409,190,270,12" Grid.Row="9" MouseUp="Country_MouseUp" RenderTransformOrigin="0.5,0.5">
+                <TextBlock x:Name="Greece" Text="Греция" FontSize="17" Background="Transparent" VerticalAlignment="Center"  Height="26" RenderTransformOrigin="0.5,0.5" Margin="6,0,0,0"/>
+            </StackPanel>
+
+            <StackPanel Margin="426,81,238,190" Grid.Row="9" MouseUp="Country_MouseUp" RenderTransformOrigin="0.5,0.5">
+                <TextBlock x:Name="Rum" Text="Румыния" FontSize="17" Background="Transparent" VerticalAlignment="Center"  Height="31" RenderTransformOrigin="0.5,0.5" Margin="6,0,0,0"/>
+            </StackPanel>
+
+            <StackPanel Margin="438,137,225,140" Grid.Row="9" MouseUp="Country_MouseUp" RenderTransformOrigin="0.707,0.654">
+                <TextBlock x:Name="Bulgaria" Text="Болгария" FontSize="17" Background="Transparent" VerticalAlignment="Center"  Height="21" RenderTransformOrigin="0.5,0.5" Margin="6,0,0,0"/>
+            </StackPanel>
+
+            <StackPanel Margin="372,113,312,164" Grid.Row="9" MouseUp="Country_MouseUp" RenderTransformOrigin="0.707,0.654">
+                <StackPanel.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="69.606"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </StackPanel.RenderTransform>
+                <TextBlock x:Name="Serbia" Text="Сербия" FontSize="17" Background="Transparent" VerticalAlignment="Center"  Height="28" RenderTransformOrigin="0.5,0.5"/>
+            </StackPanel>
+
+            <StackPanel Margin="479,11,134,255" Grid.Row="9" MouseUp="Country_MouseUp" RenderTransformOrigin="0.707,0.654">
+                <TextBlock x:Name="Ukraine" Text="Украина" FontSize="17" Background="Transparent" VerticalAlignment="Center"  Height="32" RenderTransformOrigin="0.5,0.5" Margin="6,0,0,0"/>
+            </StackPanel>
+
+            <StackPanel Margin="464,71,206,205" Grid.Row="9" MouseUp="Country_MouseUp" RenderTransformOrigin="0.707,0.654">
+                <StackPanel.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="48.347"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </StackPanel.RenderTransform>
+                <TextBlock x:Name="Moldova" Text="Молдова" FontSize="17" Background="Transparent" VerticalAlignment="Center"  Height="26" RenderTransformOrigin="0.5,0.5"/>
+            </StackPanel>
+
+            <StackPanel Margin="533,180,31,76" Grid.Row="9" MouseUp="Country_MouseUp" RenderTransformOrigin="0.707,0.654">
+                <StackPanel.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-6.628"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </StackPanel.RenderTransform>
+                <TextBlock x:Name="Turkey" Text="Турция" FontSize="17" Background="Transparent" VerticalAlignment="Center"  Height="43" RenderTransformOrigin="0.5,0.5" Margin="6,0,29,0"/>
+            </StackPanel>
+
+            <StackPanel Margin="578,1,5,14" Grid.Row="4" MouseUp="Country_MouseUp" RenderTransformOrigin="0.707,0.654" Grid.RowSpan="4">
+                <StackPanel.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-9.04"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </StackPanel.RenderTransform>
+                <TextBlock x:Name="Russia" Text="Россия" FontSize="17" Background="Transparent" VerticalAlignment="Center"  Height="26" RenderTransformOrigin="0.5,0.5" Margin="6,0,0,0"/>
+            </StackPanel>
+
+            <StackPanel Margin="455,23,188,10" Grid.Row="7" MouseUp="Country_MouseUp" RenderTransformOrigin="0.707,0.654" Grid.RowSpan="2">
+                <TextBlock x:Name="Belor" Text="Беларусь" FontSize="17" Background="Transparent" VerticalAlignment="Center"  Height="26" RenderTransformOrigin="0.5,0.5" Margin="6,0,0,0"/>
+            </StackPanel>
+            <StackPanel Margin="281,58,362,17" Grid.Row="2" MouseUp="Country_MouseUp" RenderTransformOrigin="0.707,0.654" Grid.RowSpan="2">
+                <StackPanel.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-56.608"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </StackPanel.RenderTransform>
+                <TextBlock x:Name="Norw" Text="Норвегия" FontSize="17" Background="Transparent" VerticalAlignment="Center"  Height="26" RenderTransformOrigin="0.5,0.5" Margin="6,0,0,0"/>
+            </StackPanel>
+
+            <StackPanel Margin="302,48,287,27" Grid.Row="2" MouseUp="Country_MouseUp" RenderTransformOrigin="0.707,0.654" Grid.RowSpan="2">
+                <StackPanel.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-69.756"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </StackPanel.RenderTransform>
+                <TextBlock x:Name="Sweden" Text="Швеция" FontSize="17" Background="Transparent" VerticalAlignment="Center"  Height="26" RenderTransformOrigin="0.5,0.5" Margin="6,0,0,0"/>
+            </StackPanel>
+
+            <StackPanel Margin="413,13,215,4" Grid.Row="2" MouseUp="Country_MouseUp" RenderTransformOrigin="0.707,0.654">
+                <StackPanel.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-75.475"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </StackPanel.RenderTransform>
+                <TextBlock x:Name="Finland" Text="Финляндия" FontSize="17" Background="Transparent" VerticalAlignment="Center"  Height="26" RenderTransformOrigin="0.5,0.5" Margin="6,0,0,0"/>
+            </StackPanel>
+            <StackPanel Margin="438,31,225,31" Grid.Row="4" MouseUp="Country_MouseUp" RenderTransformOrigin="0.707,0.654" Grid.RowSpan="2">
+                <TextBlock x:Name="Estonia" Text="Эстония" FontSize="17" Background="Transparent" VerticalAlignment="Center"  Height="31" RenderTransformOrigin="0.5,0.5" Margin="6,0,0,0"/>
+            </StackPanel>
+            <StackPanel Margin="426,22,248,14" Grid.Row="5" MouseUp="Country_MouseUp" RenderTransformOrigin="0.707,0.654" Grid.RowSpan="2">
+                <TextBlock x:Name="Latvia" Text="Латвия" FontSize="17" Background="Transparent" VerticalAlignment="Center"  Height="26" RenderTransformOrigin="0.5,0.5" Margin="6,0,0,0"/>
+            </StackPanel>
+            <StackPanel Margin="426,3,259,10" Grid.Row="6" MouseUp="Country_MouseUp" RenderTransformOrigin="0.707,0.654" Grid.RowSpan="2">
+                <TextBlock x:Name="Litva" Text="Литва" FontSize="17" Background="Transparent" VerticalAlignment="Center"  Height="26" RenderTransformOrigin="0.5,0.5" Margin="6,0,0,0"/>
+            </StackPanel>
+            <StackPanel Margin="120,36,536,26" Grid.Row="1" MouseUp="Country_MouseUp" RenderTransformOrigin="0.707,0.654">
+                <TextBlock x:Name="Iceland" Text="Исландия" FontSize="17" Background="Transparent" VerticalAlignment="Center"  Height="26" RenderTransformOrigin="0.5,0.5" Margin="6,0,0,0"/>
+            </StackPanel>
+            <StackPanel Margin="85,5,572,4" Grid.Row="5" MouseUp="Country_MouseUp" RenderTransformOrigin="0.707,0.654">
+                <TextBlock x:Name="Ireland" Text="Ирландия" FontSize="17" Background="Transparent" VerticalAlignment="Center"  Height="26" RenderTransformOrigin="0.5,0.5" Margin="6,0,0,0"/>
+            </StackPanel>
+            <StackPanel Margin="108,14,496,40" Grid.Row="4" MouseUp="Country_MouseUp" RenderTransformOrigin="0.707,0.654" Grid.RowSpan="2">
+                <StackPanel.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-82.22"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </StackPanel.RenderTransform>
+                <TextBlock x:Name="England" Text="Великобритания" FontSize="17" Background="Transparent" VerticalAlignment="Center"  Height="26" RenderTransformOrigin="0.5,0.5" Margin="6,0,0,0"/>
+            </StackPanel>
+            <StackPanel Margin="295,26,390,10" Grid.Row="5" MouseUp="Country_MouseUp" RenderTransformOrigin="0.707,0.654" Grid.RowSpan="2">
+                <TextBlock x:Name="Denmark" Text="Дания" FontSize="17" Background="Transparent" VerticalAlignment="Center"  Height="26" RenderTransformOrigin="0.5,0.5" Margin="6,0,0,0"/>
+            </StackPanel>
+            <StackPanel Margin="167,93,554,190" Grid.Row="9" MouseUp="Country_MouseUp" RenderTransformOrigin="0.5,0.5">
+                <TextBlock x:Name="Andorra" Text="Андорра" FontSize="17"  Visibility="Collapsed" Background="Transparent"  HorizontalAlignment="Center" VerticalAlignment="Top"  Height="32" Foreground="Black" RenderTransformOrigin="0.5,0.5"/>
+                <TextBlock  x:Name="idAn" Text="1" FontSize="17"  Visibility="Visible" HorizontalAlignment="Center" Background="Transparent" VerticalAlignment="Center" Width="15"  Height="27" Margin="2,0,10,0"/>
+            </StackPanel>
+            <StackPanel Margin="237,9,491,10" Grid.Row="8" MouseUp="Country_MouseUp" RenderTransformOrigin="0.5,0.5">
+                <TextBlock x:Name="Belgium" Text="Бельгия" FontSize="17"  Visibility="Collapsed" Background="Transparent"  HorizontalAlignment="Center" VerticalAlignment="Top"  Height="32" Foreground="Black" RenderTransformOrigin="0.5,0.5"/>
+                <TextBlock  x:Name="idBel" Text="2" FontSize="17"  Visibility="Visible" HorizontalAlignment="Center" Background="Transparent" VerticalAlignment="Center" Width="11"  Height="27" Margin="2,0,0,0" RenderTransformOrigin="1,0.963"/>
+            </StackPanel>
+            <StackPanel Margin="259,16,460,26" Grid.Row="7" MouseUp="Country_MouseUp" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
+                <TextBlock x:Name="Ned" Text="Нидерланды" FontSize="17"  Visibility="Collapsed" Background="Transparent"  HorizontalAlignment="Center" VerticalAlignment="Top"  Height="32" Foreground="Black" RenderTransformOrigin="0.5,0.5"/>
+                <TextBlock  x:Name="idNed" Text="3" FontSize="17"  Visibility="Visible" HorizontalAlignment="Center" Background="Transparent" VerticalAlignment="Center" Width="24"  Height="27" Margin="0,0,2,0"/>
+            </StackPanel>
+            <StackPanel Margin="248,33,475,286" Grid.Row="8" MouseUp="Country_MouseUp" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
+                <TextBlock x:Name="Luks" Text="Люксембург" FontSize="17"  Visibility="Collapsed" Background="Transparent"  HorizontalAlignment="Center" VerticalAlignment="Top"  Height="32" Foreground="Black" RenderTransformOrigin="0.5,0.5"/>
+                <TextBlock  x:Name="idLu" Text="4" FontSize="17"  Visibility="Visible" HorizontalAlignment="Center" Background="Transparent" VerticalAlignment="Center" Width="19"  Height="23" Margin="0,0,-3,0"/>
+            </StackPanel>
+            <StackPanel Margin="273,33,450,251" Grid.Row="9" MouseUp="Country_MouseUp" RenderTransformOrigin="0.5,0.5">
+                <TextBlock x:Name="Liech" Text="Лихтенштейн" FontSize="17"  Visibility="Collapsed" Background="Transparent"  HorizontalAlignment="Center" VerticalAlignment="Top"  Height="32" Foreground="Black" RenderTransformOrigin="0.5,0.5"/>
+                <TextBlock  x:Name="idLi" Text="6" FontSize="17"  Visibility="Visible" HorizontalAlignment="Center" Background="Transparent" VerticalAlignment="Center" Width="18"  Height="24"/>
+            </StackPanel>
+            <StackPanel Margin="329,73,390,213" Grid.Row="9" MouseUp="Country_MouseUp" RenderTransformOrigin="0.5,0.5">
+                <TextBlock x:Name="Slove" Text="Словения" FontSize="17"  Visibility="Collapsed" Background="Transparent"  HorizontalAlignment="Center" VerticalAlignment="Top"  Height="32" Foreground="Black" RenderTransformOrigin="0.5,0.5"/>
+                <TextBlock  x:Name="idSl" Text="7" FontSize="17"  Visibility="Visible" HorizontalAlignment="Center" Background="Transparent" VerticalAlignment="Center" Width="14"  Height="21" Margin="10,0,2,0"/>
+            </StackPanel>
+            <StackPanel Margin="356,84,368,200" Grid.Row="9" MouseUp="Country_MouseUp" RenderTransformOrigin="0.5,0.5">
+                <TextBlock x:Name="Crotia" Text="Хорватия" FontSize="17"  Visibility="Collapsed" Background="Transparent"  HorizontalAlignment="Center" VerticalAlignment="Top"  Height="32" Foreground="Black" RenderTransformOrigin="0.5,0.5"/>
+                <TextBlock  x:Name="idSCr" Text="8" FontSize="17"  Visibility="Visible" HorizontalAlignment="Center" Background="Transparent" VerticalAlignment="Center" Width="12"  Height="21" RenderTransformOrigin="-0.071,0.571" Margin="5,0,0,0"/>
+            </StackPanel>
+            <StackPanel Margin="367,109,350,175" Grid.Row="9" MouseUp="Country_MouseUp" RenderTransformOrigin="0.5,0.5">
+                <TextBlock x:Name="Bos" Text="Босния и Герцеговина" FontSize="17"  Visibility="Collapsed" Background="Transparent"  HorizontalAlignment="Center" VerticalAlignment="Top"  Height="32" Foreground="Black" RenderTransformOrigin="0.5,0.5"/>
+                <TextBlock  x:Name="idBo" Text="9" FontSize="17"  Visibility="Visible" HorizontalAlignment="Center" Background="Transparent" VerticalAlignment="Center" Width="18"  Height="21" Margin="4,0,1,0"/>
+            </StackPanel>
+            <StackPanel Margin="373,134,346,149" Grid.Row="9" MouseUp="Country_MouseUp" RenderTransformOrigin="0.5,0.5">
+                <TextBlock x:Name="Montenegro" Text="Черногория" FontSize="17"  Visibility="Collapsed" Background="Transparent"  HorizontalAlignment="Center" VerticalAlignment="Top"  Height="32" Foreground="Black" RenderTransformOrigin="0.5,0.5"/>
+                <TextBlock  x:Name="idMon" Text="10" FontSize="17"  Visibility="Visible" HorizontalAlignment="Center" Background="Transparent" VerticalAlignment="Center" Width="22"  Height="22" Margin="2,0,1,0"/>
+            </StackPanel>
+            <StackPanel Margin="386,165,335,118" Grid.Row="9" MouseUp="Country_MouseUp" RenderTransformOrigin="0.5,0.5">
+                <TextBlock x:Name="Albania" Text="Албания" FontSize="17"  Visibility="Collapsed" Background="Transparent"  HorizontalAlignment="Center" VerticalAlignment="Top"  Height="32" Foreground="Black" RenderTransformOrigin="0.5,0.5"/>
+                <TextBlock  x:Name="idAl" Text="11" FontSize="17"  Visibility="Visible" HorizontalAlignment="Center" Background="Transparent" VerticalAlignment="Center" Width="22"  Height="21" Margin="0,0,-1,0"/>
+            </StackPanel>
+            <StackPanel Margin="414,160,307,124" Grid.Row="9" MouseUp="Country_MouseUp" RenderTransformOrigin="0.5,0.5">
+                <TextBlock x:Name="Macedonia" Text="Словения" FontSize="17"  Visibility="Collapsed" Background="Transparent"  HorizontalAlignment="Center" VerticalAlignment="Top"  Height="32" Foreground="Black" RenderTransformOrigin="0.5,0.5"/>
+                <TextBlock  x:Name="idMac" Text="12" FontSize="17"  Visibility="Visible" HorizontalAlignment="Center" Background="Transparent" VerticalAlignment="Center" Width="26"  Height="21"/>
+            </StackPanel>
+            <StackPanel Margin="305,249,416,35" Grid.Row="9" MouseUp="Country_MouseUp" RenderTransformOrigin="0.5,0.5">
+                <TextBlock  x:Name="idMal" Text="13" FontSize="17"  Visibility="Visible" HorizontalAlignment="Center" Background="Transparent" VerticalAlignment="Center" Width="26"  Height="21" Margin="0,0,-1,0"/>
+                <TextBlock x:Name="Malta" Text="Мальта" FontSize="17"  Visibility="Collapsed" Background="Transparent"  HorizontalAlignment="Center" VerticalAlignment="Top"  Height="32" Foreground="Black" RenderTransformOrigin="0.5,0.5"/>
+            </StackPanel>
+            <StackPanel Margin="305,99,416,185" Grid.Row="9" MouseUp="Country_MouseUp" RenderTransformOrigin="0.5,0.5">
+                <TextBlock x:Name="San" Text="Сан-Марино" FontSize="17"  Visibility="Collapsed" Background="Transparent"  HorizontalAlignment="Center" VerticalAlignment="Top"  Height="32" Foreground="Black" RenderTransformOrigin="0.5,0.5"/>
+                <TextBlock  x:Name="idSan" Text="14" FontSize="17"  Visibility="Visible" HorizontalAlignment="Center" Background="Transparent" VerticalAlignment="Center" Width="26"  Height="21" Margin="0,0,-1,0"/>
+            </StackPanel>
+            <StackPanel Margin="325,172,396,112" Grid.Row="9" MouseUp="Country_MouseUp" RenderTransformOrigin="0.5,0.5">
+                <TextBlock x:Name="Vatican" Text="Ватикан" FontSize="17"  Visibility="Collapsed" Background="Transparent"  HorizontalAlignment="Center" VerticalAlignment="Top"  Height="32" Foreground="Black" RenderTransformOrigin="0.5,0.5"/>
+                <TextBlock  x:Name="idVat" Text="15" FontSize="17"  Visibility="Visible" HorizontalAlignment="Center" Background="Transparent" VerticalAlignment="Center" Width="26"  Height="21" Margin="0,0,-1,0"/>
+            </StackPanel>
+            <StackPanel Margin="378,32,283,251" Grid.Row="9" MouseUp="Country_MouseUp" RenderTransformOrigin="0.5,0.5">
+                <TextBlock x:Name="Slovak" Text="Словакия" FontSize="17" Background="Transparent" VerticalAlignment="Center"  Height="21" RenderTransformOrigin="0.5,0.5" Margin="6,0,0,0"/>
+            </StackPanel>
+
 
         </Grid>
-        <Grid Name="Admin" Visibility="Visible" HorizontalAlignment="Left" Height="729" VerticalAlignment="Top" Width="1366">
-            <Frame x:Name="Main" NavigationUIVisibility="Hidden"/>
-            <Button x:Name="CountryPage" Content="Страны"  FontSize="21" HorizontalAlignment="Left" VerticalAlignment="Top" Width="160" Margin="244,10,0,0" Click="CountryPage_Click" Height="40"/>
-            <Button x:Name="SightPage" Content="Достопримечательности" FontSize="21" HorizontalAlignment="Left" VerticalAlignment="Top" Width="253" Margin="423,10,0,0" Click="SightPage_Click" Height="40"/>
+        <StackPanel Name="AdditionalInf"  HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="629" Orientation="Horizontal" Margin="115,0,0,0">
+            <StackPanel HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="138" >
 
-            <Button x:Name="Back" Content="Назад" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="19" Width="76" Margin="10,10,0,0" Height="27" Click="Back_Click"/>
+                <TextBlock x:Name="textBlock5" TextWrapping="Wrap" Text="1-Андорра" />
+                <TextBlock x:Name="textBlock6" TextWrapping="Wrap" Text="2-Бельгия" />
+                <TextBlock x:Name="textBlock7" TextWrapping="Wrap" Text="3-Нидерланды" />
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="138" >
 
-        </Grid>
+                <TextBlock x:Name="textBlock8" TextWrapping="Wrap" Text="4-Люксембург" />
+                <TextBlock x:Name="textBlock9" TextWrapping="Wrap" Text="5-Швейцария" />
+                <TextBlock x:Name="textBlock10" TextWrapping="Wrap" Text="6-Лихтенштейн" />
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="138" >
+
+                <TextBlock x:Name="textBlock11" TextWrapping="Wrap" Text="7-Словения" />
+                <TextBlock x:Name="textBlock12" TextWrapping="Wrap" Text="8-Хорватия" />
+                <TextBlock x:Name="textBlock13" TextWrapping="Wrap" Text="9-Босния и Герцеговина"/>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="138" >
+
+                <TextBlock x:Name="textBlock14" TextWrapping="Wrap" Text="10-Черногория" />
+                <TextBlock x:Name="textBlock15" TextWrapping="Wrap" Text="11-Абания" />
+                <TextBlock x:Name="textBlock16" TextWrapping="Wrap" Text="12-Македония" />
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="138" >
+
+                <TextBlock x:Name="textBlock17" TextWrapping="Wrap" Text="13-Мальта" />
+                <TextBlock x:Name="textBlock18" TextWrapping="Wrap" Text="14-Сан-Марино" />
+                <TextBlock x:Name="textBlock19" TextWrapping="Wrap" Text="15-Ватикан" />
+            </StackPanel>
+        </StackPanel>
+
 
     </Grid>
 </Window>

@@ -59,6 +59,10 @@
       <DependentUpon>CountryAd.xaml</DependentUpon>
     </Compile>
     <Compile Include="ListCountries.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="Password.xaml.cs">
+      <DependentUpon>Password.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Ser.cs" />
     <Compile Include="Sight.cs" />
     <Compile Include="SightAd.xaml.cs">
@@ -67,6 +71,7 @@
     <Compile Include="Sight_Inform.xaml.cs">
       <DependentUpon>Sight_Inform.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Sort.cs" />
     <Page Include="CountryAd.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -85,6 +90,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Password.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SightAd.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

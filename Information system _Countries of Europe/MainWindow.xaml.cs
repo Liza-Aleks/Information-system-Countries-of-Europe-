@@ -32,81 +32,109 @@ namespace Information_system__Countries_of_Europe
 
         public List<Sight> sights = new List<Sight>();
 
-
-        public void Log(string log)
-        {
-            using (FileStream fs = new FileStream("../../log.txt", FileMode.OpenOrCreate))
-            {
-                StreamWriter sw = new StreamWriter(fs, Encoding.Default);
-                sw.WriteLine(log);
-
-                sw.Close();
-                fs.Close();
-            }
-        }
-
+        
 
         public MainWindow()
         {
             InitializeComponent();
-
-            countries.ListCou = new List<Country>();
-            
-
-            if (File.Exists("../../allcountries.xml"))
+            try
             {
-                countries = Ser.DeSerialize(countries);
-                foreach (var item in countries.ListCou)
+
+                countries.ListCou = new List<Country>();
+                Log.L("Вход в режим пользователя; " + DateTime.Now);
+
+                if (File.Exists("../../allcountries.xml"))
                 {
-                    AllCou.Items.Add(item.Name);
-                    
-                    foreach (var s in item.LSight)
+                    countries = Ser.DeSerialize(countries);
+                    Sort.C(countries.ListCou);
+                    foreach (var item in countries.ListCou)
                     {
-                        sights.Add(s);
+                        AllCou.Items.Add(item.Name);
+
+                        foreach (var s in item.LSight)
+                        {
+                            Sort.S(item.LSight);
+                            sights.Add(s);
+                        }
                     }
+
+                   
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "", MessageBoxButton.OK, MessageBoxImage.Warning);
+                Log.L("Ошибка! " + ex.Message);
             }
         }
 
         /*ПОКАЗАТЬ АДМИН*/
         private void SHOW_Click(object sender, RoutedEventArgs e)
         {
-            MainPage.Visibility = Visibility.Hidden;
-            Admin.Visibility = Visibility.Visible;
+            Password wnd = new Password(this);
+            wnd.Show();
+            
+
         }
 
         /*CСЫЛКИ НА СТРАНИЦЫ */
         private void CountryPage_Click(object sender, RoutedEventArgs e)
         {
-            Main.Content = new CountryAd();
+            try {
+                Main.Content = new CountryAd();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "", MessageBoxButton.OK, MessageBoxImage.Warning);
+                Log.L("Ошибка! " + ex.Message);
+            }
         }
          private void SightPage_Click(object sender, RoutedEventArgs e)
         {
-            Main.Content = new SightAd();
+            try
+            {
+                Main.Content = new SightAd();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "", MessageBoxButton.OK, MessageBoxImage.Warning);
+                Log.L("Ошибка! " + ex.Message);
+            }
         }
 
         /*НА СТРАНИЧКУ ДЛЯ ПОЛЬЗОВАТЕЛЯ */
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-            MainPage.Visibility = Visibility.Visible;
-            Admin.Visibility = Visibility.Hidden;
-            AllCou.Items.Clear();
-            sights.Clear();
-
-            if (File.Exists("../../allcountries.xml"))
+            try
             {
-                countries = Ser.DeSerialize(countries);
-                foreach (var item in countries.ListCou)
-                {
-                    AllCou.Items.Add(item.Name);
+                MainPage.Visibility = Visibility.Visible;
+                Admin.Visibility = Visibility.Hidden;
+                AdditionalInf.Visibility = Visibility.Visible;
+                AllCou.Items.Clear();
+                sights.Clear();
 
-                    foreach (var s in item.LSight)
+                if (File.Exists("../../allcountries.xml"))
+                {
+                    countries = Ser.DeSerialize(countries);
+                    foreach (var item in countries.ListCou)
                     {
-                        sights.Add(s);
+                        AllCou.Items.Add(item.Name);
+
+                        foreach (var s in item.LSight)
+                        {
+                            Sort.S(item.LSight);
+                            sights.Add(s);
+                        }
                     }
                 }
+               
+                Log.L("Вход в режим пользователя; " + DateTime.Now);
             }
-
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "", MessageBoxButton.OK, MessageBoxImage.Warning);
+                Log.L("Ошибка! " + ex.Message);
+            }
 
         }
 
@@ -114,47 +142,59 @@ namespace Information_system__Countries_of_Europe
         /*ВЫБОР ЭЛЕМЕНТА В ЛИСТЕ С ДОСОПРИМЕЧАТЕЛЬНОСТЯМИ*/
         private void Sights_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            Sight_Inform wnd = new Sight_Inform(this);
-            wnd.Show();
-            if(Sights.SelectedItem != null)
-            foreach (var item in sights)
-            {
-                if(Sights.SelectedItem.ToString() == item.Show())
-                {
-                    wnd.SightIm.Source = new BitmapImage(new Uri(item.SightIm));
-                    wnd.Name.Text = item.Name;
-                    wnd.Year.Text = item.Year;
-                    wnd.City.Text = item.City;
-                    wnd.Inf.Text = item.Information;
-                }
+            try {
+                Sight_Inform wnd = new Sight_Inform(this);
+                wnd.Show();
+                if (Sights.SelectedItem != null)
+                    foreach (var item in sights)
+                    {
+                        if (Sights.SelectedItem.ToString() == item.Show())
+                        {
+                            wnd.SightIm.Source = new BitmapImage(new Uri(item.SightIm));
+                            wnd.Name.Text = item.Name;
+                            wnd.Year.Text = item.Year;
+                            wnd.City.Text = item.City;
+                            wnd.Inf.Text = item.Information;
+                        }
+                    }
             }
-            
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "", MessageBoxButton.OK, MessageBoxImage.Warning);
+                Log.L("Ошибка! " + ex.Message);
+            }
         }
 
         /*ВЫБОР ЭЛЕМЕНТА В ЛИСТЕ СО СТРАНАМИ*/
         private void AllCou_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
-            foreach (var cou in countries.ListCou)
-            {
-                if (AllCou.SelectedItem.Equals(cou.Name))
+            try {
+                foreach (var cou in countries.ListCou)
                 {
-                    CountryName.Text = cou.Name;
-                    Capital.Text = cou.Capital;
-                    Language.Text = cou.Language;
-                    Flag.Source = new BitmapImage(new Uri(cou.Flag));
-                    Square.Text = cou.Square.ToString();
-                    Population.Text = cou.Population.ToString();
-
-                    Sights.Items.Clear();
-                    foreach (var s in sights)
+                    if (AllCou.SelectedItem.Equals(cou.Name))
                     {
-                        if (cou.Name == s.Country)
+                        CountryName.Text = cou.Name;
+                        Capital.Text = cou.Capital;
+                        Language.Text = cou.Language;
+                        Flag.Source = new BitmapImage(new Uri(cou.Flag));
+                        Square.Text = cou.Square.ToString();
+                        Population.Text = cou.Population.ToString();
+
+                        Sights.Items.Clear();
+                        foreach (var s in sights)
                         {
-                            Sights.Items.Add(s.Show());
+                            if (cou.Name == s.Country)
+                            {
+                                Sights.Items.Add(s.Show());
+                            }
                         }
                     }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "", MessageBoxButton.OK, MessageBoxImage.Warning);
+                Log.L("Ошибка! " + ex.Message);
             }
         }
 
@@ -162,31 +202,38 @@ namespace Information_system__Countries_of_Europe
         /*ПОИСК ПО ЛИСТБОКСУ ALLCOU*/
         private void SearchBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            List<Country> c = new List<Country>();
+            try {
+                List<Country> c = new List<Country>();
 
-            if (SearchBox.Text != null)
-            {
-                AllCou.Items.Clear();
-                foreach (var item in countries.ListCou)
+                if (SearchBox.Text != null)
                 {
-                    if (item.Name.Contains(SearchBox.Text))
-                        if (!c.Contains(item))
-                        {
-                            c.Add(item);
-                        }
-                        else
-                        {
-                            c.Clear();
-                            foreach (var cou in countries.ListCou)
+                    AllCou.Items.Clear();
+                    foreach (var item in countries.ListCou)
+                    {
+                        if (item.Name.Contains(SearchBox.Text))
+                            if (!c.Contains(item))
                             {
                                 c.Add(item);
                             }
-                        }
+                            else
+                            {
+                                c.Clear();
+                                foreach (var cou in countries.ListCou)
+                                {
+                                    c.Add(item);
+                                }
+                            }
+                    }
+                    foreach (var item in c)
+                    {
+                        AllCou.Items.Add(item.ShowName());
+                    }
                 }
-                foreach (var item in c)
-                {
-                    AllCou.Items.Add(item.ShowName());
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "", MessageBoxButton.OK, MessageBoxImage.Warning);
+                Log.L("Ошибка! " + ex.Message);
             }
         }
 
@@ -194,38 +241,46 @@ namespace Information_system__Countries_of_Europe
 
 
         /*КНОПКИ ПО СТРАНАМ НА КАРТЕ */
-        private void Spain_Click(object sender, RoutedEventArgs e)
+
+        private void Country_MouseUp(object sender, RoutedEventArgs e)
         {
-            Sights.Items.Clear();
-            foreach (var item in countries.ListCou)
+            try
             {
-                if (Spain.Content.ToString() == item.Name)
-                {
-                    CountryName.Text = item.Name;
-                    Capital.Text = item.Capital;
-                    Language.Text = item.Language;
-                    Flag.Source = new BitmapImage(new Uri(item.Flag));
-                    Square.Text = item.Square.ToString();
-                    Population.Text = item.Population.ToString();
-                    
-                    foreach (var s in item.LSight)
+                StackPanel sp = (StackPanel)sender;
+               var inf = (TextBlock)sp.Children[0];
+           
+                    Sights.Items.Clear();
+                    foreach (var item in countries.ListCou)
                     {
-                        if (item.Name == s.Country)
+                        if (inf.Text == item.Name)
                         {
-                            Sights.Items.Add(s.Show());
+                            CountryName.Text = item.Name;
+                            Capital.Text = item.Capital;
+                            Language.Text = item.Language;
+                            Flag.Source = new BitmapImage(new Uri(item.Flag));
+                            Square.Text = item.Square.ToString();
+                            Population.Text = item.Population.ToString();
+
+                            foreach (var s in item.LSight)
+                            {
+                                if (item.Name == s.Country)
+                                {
+                                    Sights.Items.Add(s.Show());
+                                }
+                            }
                         }
-                        
                     }
                 }
-
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "", MessageBoxButton.OK, MessageBoxImage.Warning);
+                Log.L("Ошибка! " + ex.Message);
             }
 
         }
 
 
 
-      
-        
-     
-    }
+
+        }
 }

@@ -31,10 +31,10 @@
 
         <ListBox x:Name="AllSightAd" HorizontalAlignment="Left" Height="516" FontSize="19" VerticalAlignment="Top" Width="561" Grid.Row="1" Margin="10,75,0,0" Grid.RowSpan="7" SelectionChanged="AllSightAd_SelectionChanged"/>
 
-        <TextBox x:Name="SearchSightAd" TextWrapping="Wrap" Text="" FontSize="19" Margin="10,16,103,59" Grid.Row="1" />
+        <TextBox x:Name="SearchSightAd" TextWrapping="Wrap" Text="" FontSize="19" Margin="10,16,103,59" Grid.Row="1" TextChanged="SearchSightAd_TextChanged" />
 
 
-        <Grid Name="EditSightAd" Grid.Column="1" Grid.RowSpan="8" Visibility="Hidden" Margin="0,10,0,0" Grid.Row="1">
+        <Grid Name="EditSightAd" Grid.Column="1" Grid.RowSpan="8" Visibility="Visible" Margin="0,10,0,0" Grid.Row="1">
             <Grid.RowDefinitions>
 
 
@@ -57,11 +57,11 @@
             <TextBox x:Name="EdCitySightAd"  Grid.Row="2" Text="" TextWrapping="Wrap" FontSize="21" Margin="10,34,185,0" Height="42" VerticalAlignment="Top"/>
 
             <TextBlock x:Name="textBlock23"  Grid.Row="3" TextWrapping="Wrap"   FontSize="20" Margin="166,6,327,49"><Run Text="Местонахождение(страна):"/></TextBlock>
-            <TextBox x:Name="EdCountrySightAd"  Grid.Row="3" Text="" TextWrapping="Wrap" FontSize="21" Margin="10,34,185,0" Height="42" VerticalAlignment="Top"/>
+            <ComboBox x:Name="EdCountrySightAd"  Grid.Row="3" Text="" FontSize="21" Margin="10,34,185,0" Height="42" VerticalAlignment="Top"/>
 
             <TextBlock x:Name="textBlock22"  Grid.Row="3" TextWrapping="Wrap"   FontSize="20" Margin="226,81,391,55" Grid.RowSpan="2"><Run Text="Фотография:"/></TextBlock>
             <TextBox x:Name="SightImEdAd"  Grid.Row="4" Text="" TextWrapping="Wrap" FontSize="21" Margin="10,24,302,0" Height="56" VerticalAlignment="Top"/>
-            <Button x:Name="SightImDownEdAd" Content="Загрузить" HorizontalAlignment="Left"  FontSize="20" VerticalAlignment="Top" Width="112" Margin="447,24,0,0" Grid.Row="4" Height="56"/>
+            <Button x:Name="SightImDownEdAd" Content="Загрузить" HorizontalAlignment="Left"  FontSize="20" VerticalAlignment="Top" Width="112" Margin="447,24,0,0" Grid.Row="4" Height="56" Click="SightImDownEdAd_Click"/>
 
 
             <TextBlock x:Name="textBlock20"  Grid.Row="5" TextWrapping="Wrap"   FontSize="20" Margin="191,5,345,124"><Run Text="Краткая информация:"/></TextBlock>
@@ -78,8 +78,8 @@
             <Button x:Name="AddSightAd" Content="Добавить достопримечательность" HorizontalAlignment="Left" FontSize="19" VerticalAlignment="Top" Width="561" Margin="10,10,0,0" Grid.Row="8" Height="42" Click="AddCountryAd_Click"/>
         </StackPanel>
         <StackPanel Name="AddDeleteSightSP" HorizontalAlignment="Left" Height="81" VerticalAlignment="Top" Width="334" Grid.Row="8" Visibility="Hidden">
-            <Button x:Name="DeletSightAd" FontSize="19" Content="Удалить" Margin="10,10,183,0" Height="42"/>
-            <Button x:Name="AddSightAd1" Content="Добавить достопримечательность" Margin="164,-42,10,20"  FontSize="19" Height="42"/>
+            <Button x:Name="DeletSightAd" FontSize="19" Content="Удалить" Margin="10,10,183,0" Height="42" Click="DeletSightAd_Click"/>
+            <Button x:Name="AddSightAd1" Content="Добавить достопримечательность" Margin="230,-42,-236,20" Click="AddCountryAd_Click"  FontSize="19" Height="42"/>
         </StackPanel>
 
 
