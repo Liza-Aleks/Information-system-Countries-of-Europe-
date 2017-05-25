@@ -67,12 +67,11 @@ namespace Information_system__Countries_of_Europe
         private void AllCouAd_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             try {
-                AddCountrySP.Visibility = Visibility.Hidden;
-                AddDeleteCountrySP.Visibility = Visibility.Visible;
+                
                 CountryRedAd.Visibility = Visibility.Visible;
                 EditCountryAd.Visibility = Visibility.Visible;
                 EditSightAd.Visibility = Visibility.Visible;
-                SaveCountryAd.Visibility = Visibility.Hidden;
+               
                 SightAd.Visibility = Visibility.Hidden;
                 EditSightListAd.Items.Clear();
                 EdNameSightAd.Text = "";

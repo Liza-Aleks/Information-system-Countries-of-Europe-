@@ -61,8 +61,7 @@
 
             <Button x:Name="AddSightAd" Content="Добавить достопримечательность" FontSize="19" HorizontalAlignment="Left" VerticalAlignment="Top" Width="491" Margin="10,32,0,0" Grid.Row="6" Height="42" Click="AddSightAd_Click"/>
             <Button x:Name="EditCountryAd"  Visibility="Visible" Content="Сохранить изменения" HorizontalAlignment="Left" FontSize="19" VerticalAlignment="Top" Width="214" Margin="278,23,0,0" Grid.Row="7" Height="42" Click="EditCountryAd_Click"/>
-            <Button x:Name="SaveCountryAd"  Visibility="Hidden" Content="Сохранить" HorizontalAlignment="Left" FontSize="19" VerticalAlignment="Top" Width="190" Margin="302,10,0,0" Grid.Row="7" Height="42" Click="button_Click"/>
-        </Grid>
+            </Grid>
 
         <Grid Name="SightAd" Margin="11,0,10,0" Grid.RowSpan="8" Grid.Column="2" Grid.Row="1" Visibility="Hidden">
             <Grid.RowDefinitions>
