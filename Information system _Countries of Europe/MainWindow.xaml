@@ -37,7 +37,7 @@
 
             </Grid.ColumnDefinitions>
             <Button x:Name="SHOW" Grid.Row="0" FontSize="16" Content="Админ" Margin="10,23,639,5"  Click="SHOW_Click"/>
-            <Image x:Name="image" Grid.RowSpan="9" Source="C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\Map.png" Grid.Row="1"/>
+            <Image x:Name="image" Grid.RowSpan="9" Grid.Row="1"/>
 
 
             <ListBox x:Name="AllCou" HorizontalAlignment="Left" FontSize="19" Height="624" Grid.RowSpan="9" VerticalAlignment="Top" Width="231" Grid.Column="1" Margin="10,54,0,0" Grid.Row="1" SelectionChanged="AllCou_SelectionChanged"/>
@@ -138,7 +138,7 @@
             </StackPanel>
 
             <StackPanel Margin="369,55,303,222" Grid.Row="9" MouseUp="Country_MouseUp" RenderTransformOrigin="0.5,0.5">
-                <TextBlock x:Name="Hungary" Text="Венгрия" FontSize="17" Background="Transparent" VerticalAlignment="Center"  Height="21" RenderTransformOrigin="0.5,0.5" Margin="6,0,0,0"/>
+                <TextBlock x:Name="Hungary" Text="Венгрия" FontSize="17" Background="Transparent" VerticalAlignment="Center"  Height="31" RenderTransformOrigin="0.5,0.5"/>
             </StackPanel>
 
             <StackPanel Margin="409,190,270,12" Grid.Row="9" MouseUp="Country_MouseUp" RenderTransformOrigin="0.5,0.5">
@@ -202,7 +202,7 @@
                         <TranslateTransform/>
                     </TransformGroup>
                 </StackPanel.RenderTransform>
-                <TextBlock x:Name="Russia" Text="Россия" FontSize="17" Background="Transparent" VerticalAlignment="Center"  Height="26" RenderTransformOrigin="0.5,0.5" Margin="6,0,0,0"/>
+                <TextBlock x:Name="Russia" Text="Россия" FontSize="17" Background="Transparent" VerticalAlignment="Center"  Height="29" RenderTransformOrigin="0.5,0.5"/>
             </StackPanel>
 
             <StackPanel Margin="455,23,188,10" Grid.Row="7" MouseUp="Country_MouseUp" RenderTransformOrigin="0.707,0.654" Grid.RowSpan="2">

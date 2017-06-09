@@ -43,6 +43,10 @@ namespace Information_system__Countries_of_Europe
                 countries.ListCou = new List<Country>();
                 Log.L("Вход в режим пользователя; " + DateTime.Now);
 
+                var Pat = System.Reflection.Assembly.GetExecutingAssembly().Location;
+                var p = "Map.png";
+                image.Source = new BitmapImage(new Uri(System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Pat),p)));
+
                 if (File.Exists("../../allcountries.xml"))
                 {
                     countries = Ser.DeSerialize(countries);
