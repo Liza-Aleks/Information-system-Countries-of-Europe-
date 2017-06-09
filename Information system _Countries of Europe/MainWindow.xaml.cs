@@ -139,13 +139,15 @@ namespace Information_system__Countries_of_Europe
         }
 
 
-        /*ВЫБОР ЭЛЕМЕНТА В ЛИСТЕ С ДОСОПРИМЕЧАТЕЛЬНОСТЯМИ*/
+        /*ВЫБОР ЭЛЕМЕНТА В ЛИСТЕ С ДОСТОПРИМЕЧАТЕЛЬНОСТЯМИ*/
         private void Sights_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             try {
-                Sight_Inform wnd = new Sight_Inform(this);
-                wnd.Show();
                 if (Sights.SelectedItem != null)
+                {
+                    Sight_Inform wnd = new Sight_Inform(this);
+                    wnd.Show();
+
                     foreach (var item in sights)
                     {
                         if (Sights.SelectedItem.ToString() == item.Show())
@@ -157,6 +159,7 @@ namespace Information_system__Countries_of_Europe
                             wnd.Inf.Text = item.Information;
                         }
                     }
+                }
             }
             catch (Exception ex)
             {
@@ -229,6 +232,8 @@ namespace Information_system__Countries_of_Europe
                         AllCou.Items.Add(item.ShowName());
                     }
                 }
+               else
+                { }
             }
             catch (Exception ex)
             {
