@@ -156,7 +156,10 @@ namespace Information_system__Countries_of_Europe
                     {
                         if (Sights.SelectedItem.ToString() == item.Show())
                         {
-                            wnd.SightIm.Source = new BitmapImage(new Uri(item.SightIm));
+                            string tempurl = item.SightIm.Split('/')[item.SightIm.Split('/').Count() - 1];
+                            var Pat = System.Reflection.Assembly.GetExecutingAssembly().Location;
+                            wnd.SightIm.Source = new BitmapImage(new Uri(System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Pat) + "/imgSight/", tempurl)));
+                            
                             wnd.Name.Text = item.Name;
                             wnd.Year.Text = item.Year;
                             wnd.City.Text = item.City;
@@ -183,7 +186,11 @@ namespace Information_system__Countries_of_Europe
                         CountryName.Text = cou.Name;
                         Capital.Text = cou.Capital;
                         Language.Text = cou.Language;
-                        Flag.Source = new BitmapImage(new Uri(cou.Flag));
+
+                        string tempurl = cou.Flag.Split('/')[cou.Flag.Split('/').Count() - 1];
+                        var Pat = System.Reflection.Assembly.GetExecutingAssembly().Location;
+                        Flag.Source = new BitmapImage(new Uri(System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Pat) + "/imgFlag/", tempurl)));
+
                         Square.Text = cou.Square.ToString();
                         Population.Text = cou.Population.ToString();
 
@@ -267,9 +274,13 @@ namespace Information_system__Countries_of_Europe
                             CountryName.Text = item.Name;
                             Capital.Text = item.Capital;
                             Language.Text = item.Language;
-                            Flag.Source = new BitmapImage(new Uri(item.Flag));
-                            Square.Text = item.Square.ToString();
-                            Population.Text = item.Population.ToString();
+
+                        string tempurl = item.Flag.Split('/')[item.Flag.Split('/').Count() - 1];
+                        var Pat = System.Reflection.Assembly.GetExecutingAssembly().Location;
+                        Flag.Source = new BitmapImage(new Uri(System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Pat) + "/imgFlag/", tempurl)));
+
+                        Square.Text = item.Square.ToString();
+                        Population.Text = item.Population.ToString();
 
                             foreach (var s in item.LSight)
                             {
