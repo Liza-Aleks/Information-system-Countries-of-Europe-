@@ -31,7 +31,7 @@ namespace Information_system__Countries_of_Europe
         public ListCountries countries = new ListCountries();
 
         public List<Sight> sights = new List<Sight>();
-
+       
         
 
         public MainWindow()
@@ -45,7 +45,7 @@ namespace Information_system__Countries_of_Europe
 
                 var Pat = System.Reflection.Assembly.GetExecutingAssembly().Location;
                 var p = "Map.png";
-                image.Source = new BitmapImage(new Uri(System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Pat),p)));
+                image.Source = new BitmapImage(new Uri(System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Pat)+"/Map/", p)));
 
                 if (File.Exists("../../allcountries.xml"))
                 {
@@ -255,6 +255,7 @@ namespace Information_system__Countries_of_Europe
         {
             try
             {
+                
                 StackPanel sp = (StackPanel)sender;
                var inf = (TextBlock)sp.Children[0];
            
