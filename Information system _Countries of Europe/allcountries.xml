@@ -1,0 +1,1011 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<ListCountries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ListCou>
+    <Country>
+      <Name>Австрия</Name>
+      <Capital>Вена</Capital>
+      <Language>Немецкий </Language>
+      <Square>83.88</Square>
+      <Population>8.611</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Austria.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Венская Опера (Штаатсопер) </Name>
+          <Year>1869</Year>
+          <Information>Венская Опера (Staatsoper) — одна из тех ассоциаций, которые обязательно возникают в памяти каждого туриста при упоминании Вены.</Information>
+          <City>Вена</City>
+          <Country>Австрия</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Венская опера.jpg</SightIm>
+        </Sight>
+        <Sight>
+          <Name>Ледяная пещера Айсризенвельт </Name>
+          <Year>Открытие - 1879 год</Year>
+          <Information>Айсрайзенвельт — самая большая ледяная пещера в мире, она тянется более чем на 42 км. До конца XIX века о пещере знали только местные охотники. Официально о её открытии было объявлено в 1879 году, а исследования в ней начались в 1920-х годах. Для туристов оборудован маршрут длиной 1 км, который, собственно, и покрыт льдом. Температура в пещере летом 0 градусов, для посещения теплая одежда обязательна</Information>
+          <City>Верфен</City>
+          <Country>Австрия</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Ледяная пещера Айсризенвельт.jpg</SightIm>
+        </Sight>
+        <Sight>
+          <Name>Шёнбрунн</Name>
+          <Year>1642</Year>
+          <Information>Архитектурный комплекс Шёнбрунн — настоящая жемчужина Австрии и едва ли не главная достопримечательность Вены. Дворец, некогда бывший резиденцией Габсбургов, имеет длинную и славную историю. В начале XIV столетия небольшое владение на месте будущего дворца именовалось Каттербург (Katterburg) и было собственностью монастыря Клостернойбург. В течение следующих столетий хозяева владений менялись, пока в 1569 году Максимилиан II не присоединил эту землю к владениям Габсбургов, начав тут постройку летнего дома, парка и зверинца. С тех пор будущий Шёнбрунн служил нескольким поколениям Габсбургов охотничьим замком, пока после смерти императора Фердинанда II в. 1637 году его жена Элеонора в 1642 году не основала здесь свою резиденцию под названием Шёнбрунн, или «Прекрасный источник», по имени источника с ключевой водой, открытого кайзером Матиасом в этих местах. В том же году Шёнбрунн первый раз был упомянут документально.</Information>
+          <City>Вена</City>
+          <Country>Австрия</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Шёнбрунн.jpg</SightIm>
+        </Sight>
+        <Sight>
+          <Name>Штефансдом</Name>
+          <Year>1340</Year>
+          <Information>Штефансдом (Stephansdom) — Собор святого Cтефана, или, как говорят австрийцы, Штефана. Это символ Вены и Австрии, главная достопримечательность города. Этот выдающийся кафедральный собор, первое письменное упоминание о котором датируется 1221 годом, был выстроен на месте приходской церкви, сооруженной в 1137 году. Через 10 лет храм был перестроен и принял вид романской базилики с поперечным нефом и хором. Тогда же храм был освящен в честь Святого Штефана. В 1230 году на этом же месте возвели новый собор в позднероманском стиле. Окончанию строительства помешал пожар, случившийся в 1258 году. В 1304 году собор снова попытались выстроить, теперь уже в готическом стиле. Строительство увенчалось успехом, и в 1340 году свет, наконец, увидел величественный готический храм.</Information>
+          <City>Вена</City>
+          <Country>Австрия</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Штефансдом.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Албания</Name>
+      <Capital>Тирана</Capital>
+      <Language>Албанский</Language>
+      <Square>28.75</Square>
+      <Population>3.039</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Albania.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Крепость Розафа</Name>
+          <Year>VI–V веках до н.э.</Year>
+          <Information>Крепость Розафа — развалины крепости в Албании близ города Шкодер.Албанские учёные считают, что город Шкодер возник в VI–V веках до нашей эры. В III веке до нашей эры иллирийцы здесь заложили мощную крепость. Старинное шкодерское предание гласит: три брата никак не могли возвести местную крепость — она всё время обрушивалась. И тогда решили принести жертву небесам и кровью укрепить стены. Было решено, что надо замуровать жену младшего брата — прекрасную Розафу. Он долго не мог ей этого сказать. Но однажды ему пришлось, и она мужественно приняла это, сказав: «Замуруйте меня так, чтобы я могла кормить своего ребёнка». Она была живьём замурована в основании крепости вместе со своим сыном. В честь неё и названа крепость Шкодер. Похожие легенды рассказывают туристам про многие замки и крепости Европы.</Information>
+          <City>Шкодер</City>
+          <Country>Албания</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Албания Крепость Розафа.jpg</SightIm>
+        </Sight>
+        <Sight>
+          <Name>Мечеть Эфем Бей</Name>
+          <Year>1823</Year>
+          <Information>Мечеть Этхем Бей — мечеть расположена в центре албанской столицы Тираны. Строительство было начато в 1789 году Молла Бейем, и было закончено в 1823 его сыном Нахчи Этхем Бейем, правнуком Паши Сулеймана.</Information>
+          <City>Тирана</City>
+          <Country>Албания</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Мечеть Эфем Бей.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Андорра</Name>
+      <Capital>Андорра-Ла-Велья</Capital>
+      <Language>Каталанский</Language>
+      <Square>0.463</Square>
+      <Population>0.086</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Andorra.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Кальдеа</Name>
+          <Year>1994</Year>
+          <Information>Кальдеа — самый большой горный термальный центр в Европе, открытый в 1994 году. Новая концепция, интересный дизайн, обилие развлечений и качество вод Кальдеа сделали этот центр одним из лучших на территории Иберийского полуострова.</Information>
+          <City>Эскальдес-Энгордань</City>
+          <Country>Андорра</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Кальдеа.jpg</SightIm>
+        </Sight>
+        <Sight>
+          <Name>Каса-де-ла-Валь</Name>
+          <Year>1580</Year>
+          <Information>Резиденция правительства Андорры Каса-де-ла-Валь (означает Дом Долин) является основной достопримечательностью района Барри Антик. Это уникальное строение было возведено в три этажа в 1580 году и принадлежало знатному роду. Затем на протяжении времен здание переходило из рук в руки, неоднократно достраивалось и перестраивалось.</Information>
+          <City>Андорра-Ла-Велья</City>
+          <Country>Андорра</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Каса-де-ла-Валь (Casa de la Vall).jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Беларусь</Name>
+      <Capital>Бел</Capital>
+      <Language>Белорусский </Language>
+      <Square>207.6</Square>
+      <Population>9.505</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Belorussia.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Брестская крепость</Name>
+          <Year> 30-е – начало 40-х годов XIX века</Year>
+          <Information>Крепость размещалась на 4 островах, образованных рукавами рек Мухавец и Западный Буг и системой каналов.В центре крепости расположена Цитадель, или Центральное укрепление, которое мостами связано с 3 искусственными островными укреплениями. </Information>
+          <City>Брестская область</City>
+          <Country>Беларусь</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Брестская крепость.jpg</SightIm>
+        </Sight>
+        <Sight>
+          <Name>Мирский замок</Name>
+          <Year>начало XVI века</Year>
+          <Information>Мирский замковый комплекс (Мирский замок) — выдающийся пример оборонного зодчества XVI века. Он расположен в поселке Мир в Гродненской области Беларуси.</Information>
+          <City>Мир</City>
+          <Country>Беларусь</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Мирский замок.jpg</SightIm>
+        </Sight>
+        <Sight>
+          <Name>Несвижский дворец</Name>
+          <Year>1583</Year>
+          <Information>Не?свижский за?мок (белор. Нясві?жскі замак) — дворцово-замковый комплекс, находящийся в северо-восточной части города Несвижа в Минской области Белоруссии. В XVI—XIX веках — центр Несвижской ординации и резиденция её владельцев из рода Радзивиллов.</Information>
+          <City>Несвиж</City>
+          <Country>Беларусь</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Несвижский дворец.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Бельгия</Name>
+      <Capital>Брюссель</Capital>
+      <Language>Нидерландский, французский, немецкий</Language>
+      <Square>30.528</Square>
+      <Population>11.243</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Belgium.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Брюссельская ратуша</Name>
+          <Year>15 век</Year>
+          <Information>Брюссельская ратуша находится на площади Гран-Плас, в историческом центре города. Построено данное сооружение в 15 веке в стиле брабантской готики. На вершине башни, высота которой 96 метров, размещена статуя высотой 5 метров с архангелом Михаилом, побеждающим дьявола. Ратуша выстояла в войнах и пожарах, и в 1998 году вместе со всем ансамблем Гран-Пласа была признана объектом ЮНЕСКО.</Information>
+          <City>Брюссель</City>
+          <Country>Бельгия</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Бельгия  Брюссельская ратуша.jpg</SightIm>
+        </Sight>
+        <Sight>
+          <Name>Собор Антверпенской Богоматери</Name>
+          <Year>1352 </Year>
+          <Information>Главный кафедральный собор Антверпена, один из крупнейших храмов Римско-католической церкви, памятник средневековой готической культуры. Собор виден из любой точки города и считается символом Антверпена. Это самый высокий собор в Бельгии. Кроме того, он имеет самую высокую церковную башню Бенилюкса (123 метра).</Information>
+          <City>Антверпен</City>
+          <Country>Бельгия</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Бельгия Собор Антверпенской Богоматери.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Болгария</Name>
+      <Capital>София</Capital>
+      <Language>Болгарский </Language>
+      <Square>110.993</Square>
+      <Population>7.102</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Bulgaria.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Долина роз</Name>
+          <Year>XIII век</Year>
+          <Information>Долина роз похожа на фантазию художника, воплощенную в реальность. В радиусе нескольких километров от долины постоянно пахнет розами, лавандой и мятой. Этот устойчивый запах кружит голову. Вы когда-нибудь видели, как на горе раскрывают бутоны сотни тысяч роз? Вы слышали, как на восходе солнца шелестят миллионы лепестков? Такие моменты не забываются никогда.</Information>
+          <City>Казанлык</City>
+          <Country>Болгария</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Болгария Долина роз.JPG</SightIm>
+        </Sight>
+        <Sight>
+          <Name>Мечеть Баня-Баши</Name>
+          <Year>1567</Year>
+          <Information>Софийская мечеть Баня-Баши определённо является одной из наиболее старых в Европе, хотя совершенно точную дату её постройки назвать сегодня трудно. Тем не менее в наддверной арке мечети есть камень с нечитаемой надписью и цифрами. Предполагают, что это дата строительства, указанная в соответствии с хиджрой (календарём мусульман). Если так, то мечеть была выстроена примерно в 1567 г. В любом случае мечеть остаётся впечатляющим памятником османской архитектуры и узнаваемой достопримечательностью Софии.</Information>
+          <City>София</City>
+          <Country>Болгария</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Болгария Мечеть Баня-Баши.jpg</SightIm>
+        </Sight>
+        <Sight>
+          <Name>Рильский монастырь</Name>
+          <Year>конец  X века</Year>
+          <Information>Рильский монастырь — главная святыня Болгарии. Это мужской монастырь, и расположен он в горах Рила примерно в 120 км от болгарской столицы — Софии.Рильский монастырь отсчитывает свою историю с 10 века, а его основателем считают святого Иоанна Рыльского. Преподобный поселился в одной из пещер горного Рила, а его ученики и последователи начали здесь строительство святыни.</Information>
+          <City>горы Рила</City>
+          <Country>Болгария</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Болгария Рильский монастырь.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Босния и Герцеговина</Name>
+      <Capital>Сараево</Capital>
+      <Language>Боснийский, сербский,хорватский </Language>
+      <Square>51.197</Square>
+      <Population>3.531</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Bosnia and Herzegovina.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Крепость Врандук</Name>
+          <Year>начало 15 века</Year>
+          <Information>Город-крепость во Врандуке находится на реке, примерно в десятке километров южнее Зеницы-Добое. Впервые в письменных источниках такое название встречается в начале 15 в. В те времена Врандук был вполне заурядной крепостью, одной из множества в окрестностях.</Information>
+          <City>Зеница-Добое</City>
+          <Country>Босния и Герцеговина</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Босния Крепость Врандук.jpg</SightIm>
+        </Sight>
+        <Sight>
+          <Name>Национальный парк «Сутьеска»</Name>
+          <Year>1962</Year>
+          <Information>Самый старый национальный парк в республике, Сутьеска был основан неподалёку от города Фоча в 1962 г. Парк не слишком велик: его площадь составляет только лишь 17 тыс. Га. Зато именно здесь находится один из всего четырёх доисторических лесов Европы.</Information>
+          <City>Фоча</City>
+          <Country>Босния и Герцеговина</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Босния Сутьеска.jpg</SightIm>
+        </Sight>
+        <Sight>
+          <Name>Собор Святого Сердца Иисуса</Name>
+          <Year>1884</Year>
+          <Information>Крупнейший католический собор Боснии и Герцеговины и главный храм Сараево, Собор Святого Сердца Иисуса, кажется, появился здесь откуда-то из Европы. Это впечатление не столь уж и неверно: автор сооружения, архитектор Иосип Ванцаш, более прочего известен другим своим зданием — собором Нотр-Дам в Париже. Причудливое смешение неоготических и романских элементов и непременная центральная розетка над входом — визитная карточка собора.</Information>
+          <City>Сараево</City>
+          <Country>Босния и Герцеговина</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Босния Собор_Святейшего_Сердца_Иисуса.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Ватикан</Name>
+      <Capital>Ватикан</Capital>
+      <Language>Итальянский </Language>
+      <Square>0.00044</Square>
+      <Population>0.0021</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Vatican City.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Сикстинская капелла</Name>
+          <Year>1473-1481</Year>
+          <Information>Сиксти?нская капе?лла (лат. Sacellum Sixtinum; итал. Cappella Sistina) — бывшая домовая церковь в Ватикане. Построена в 1473—1481 годах архитектором Джордже де Дольчи, по заказу папы римского Сикста IV, откуда и произошло название. Ныне Капелла — музей, выдающийся памятник Возрождения, который используется также для проведения конклавов, на которых кардиналы избирают нового папу римского. Хор Сикстинской капеллы — всемирно известный профессиональный церковный хор.</Information>
+          <City>Ватикан</City>
+          <Country>Ватикан</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Ватикан Сикстинская капелла.jpg</SightIm>
+        </Sight>
+        <Sight>
+          <Name>Собор Святого Петра</Name>
+          <Year>1626</Year>
+          <Information>Собор Святого Петра (лат. Basilica Sancti Petri, итал. Basilica di San Pietro; Базилика Святого Петра) — католический собор, центральное и наиболее крупное сооружение Ватикана, крупнейшая историческая христианская церковь в мире. Одна из четырёх патриарших базилик Рима и церемониальный центр Римско-католической церкви. Занимает первое место в списке семи паломнических базилик Рима. Над его созданием трудилось несколько поколений великих мастеров: Браманте, Рафаэль, Микеланджело, Бернини. Вместимость около 60 000 человек + 400 тыс. человек на площади.</Information>
+          <City>Ватикан</City>
+          <Country>Ватикан</Country>
+          <SightIm />
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Великобритания</Name>
+      <Capital>Лондон</Capital>
+      <Language>Английский </Language>
+      <Square>243.809</Square>
+      <Population>63.396</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/United Kingdom.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Биг-Бен</Name>
+          <Year>1858</Year>
+          <Information>12 самых интересных мест Великобритании Мне нравится!67        0 комментариев Достопримечательности Великобритании - это, в первую очередь, масса исторических мест, которые так и дышат стариной. Эту страну мало затронула современная архитектура, а свою уютную природу британцы и вовсе берегут с фанатичной ретивостью. Мощеные старинные улочки, замки, дворцы, и все это - в окружении дубовых парков, зеленых долин и озер... 1 Биг-Бен Лондон 4.5 5 7 159 53 12216В путеводитель PreviousNext 1/16 Биг-Бен, возможно, самая известная достопримечательность Лондона. Хотя часто под названием «Биг-Бен» подразумевают часовую башню Вестминстерского дворца, официальное название которой «башня святого Стефана», на самом же деле Биг-Бен – самый большой колокол из шести расположенных в башне</Information>
+          <City>Лондон</City>
+          <Country>Великобритания</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Великобритания Биг-Бен.jpg</SightIm>
+        </Sight>
+        <Sight>
+          <Name>Стоунхендж</Name>
+          <Year>3020-2910 до н. э.</Year>
+          <Information>Стоунхендж (англ. Stonehenge) — внесённое в список Всемирного наследия каменное мегалитическое сооружение (кромлех) в графстве Уилтшир (Англия). Находится примерно в 130 км к юго-западу от Лондона, примерно в 3,2 км к западу от Эймсбери и в 13 км к северу от Солсбери.</Information>
+          <City>графство Уилтшир</City>
+          <Country>Великобритания</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Великобритания Стоунхендж.jpg</SightIm>
+        </Sight>
+        <Sight>
+          <Name>Тауэр</Name>
+          <Year>1078</Year>
+          <Information>Лондонский Тауэер является одним из главных символов Лондона и Великобритании, занимает особенное место в истории страны. Представляет собой крепость, расположенную в историческом центре Лондона и является одним из самых старинных сооружений Англии. Комплекс крепости Тауэр внесен в список Всемирного наследия ЮНЕСКО и является одной из самых посещаемых достопримечательностей мира.</Information>
+          <City>Лондон</City>
+          <Country>Великобритания</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Великобритания Тауэр.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Венгрия</Name>
+      <Capital>Будапешт</Capital>
+      <Language>Венгерский</Language>
+      <Square>93.04</Square>
+      <Population>9.809</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Hungary.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Будайская крепость</Name>
+          <Year>XIII век</Year>
+          <Information>Центром крепостного района является площадь Святой Троицы с изящным барочным Чумным столбом. Здесь же находится знаменитый готический собор Матьяша, где проводились церемонии коронации многих венгерских монархов. В часовне Лорето, относящейся к собору, находится единственная уцелевшая после нашествия турок гробница королевской четы - короля Белы III и его супруги Анны Шатильон. </Information>
+          <City>Будапешт</City>
+          <Country>Венгрия</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Венгрия Будайская крепость.jpg</SightIm>
+        </Sight>
+        <Sight>
+          <Name>Здание Парламента</Name>
+          <Year>с 1885 по 1904</Year>
+          <Information>В величественном облике Парламента тон задают шпили неоготических башен и мощный купол диаметром 20 метров, возвышающийся между двумя главными башнями. Высота купола равняется 96 метрам, что символизирует дату завоевания Венгрии мадьярами в 896 году. Внешние фасады Парламента украшены 88 крупными и 450 статуями меньшего размера. </Information>
+          <City>Будапешт</City>
+          <Country>Венгрия</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Венгрия Здание Парламента.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Германия </Name>
+      <Capital>Берлин </Capital>
+      <Language>Немецкий</Language>
+      <Square>357.021</Square>
+      <Population>82.176</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Germany.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Замок Нойшванштайн</Name>
+          <Year>1869</Year>
+          <Information>Сказочный замок, затаившийся в лесных массивах Баварских Альп - настоящий шедевр, заслуживший сумасшедшую популярность у туристов и приносящий баснословную прибыль Германии. Нойшванштайн стал прототипом замка Спящей красавицы в Парижском Диснейленде, источником вдохновения Чайковского для балета "Лебединое озеро" и воплощением любви Людвига II к музыке Вагнера. </Information>
+          <City>Швангау</City>
+          <Country>Германия </Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Германия Замок Нойшванштайн.jpg</SightIm>
+        </Sight>
+        <Sight>
+          <Name>Опера Земпера</Name>
+          <Year>17 век</Year>
+          <Information>Дрезденская государственная опера - один из старейших оперных театров Германии. В 17 веке при дворе саксонского курфюрста расцвела любовь к музыкальным спектаклям. Этот период считается отправной точкой для возникновения театра.</Information>
+          <City>Дрезден</City>
+          <Country>Германия </Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Германия Опера Земпера.jpg</SightIm>
+        </Sight>
+        <Sight>
+          <Name>Рейхстаг</Name>
+          <Year>1894</Year>
+          <Information>Здание длиной 137 метров и шириной 103 метра построили по проекту Пауля Валлота в 1894 году в стиле итальянского Возрождения. Четыре 46-метровые башни обозначают четыре немецких королевства. Над входом виднеются три буквы: W, W, F, которые обозначают инициалы имен прусских императоров Вильгельма I, Вильгельма II и Фридриха III. В годы их правления и было построено это здание. Позже, во время Первой мировой войны, на здании выбили надпись «Dem Deutschen Volke», что в переводе значит «Для немецкого народа». </Information>
+          <City>Берлин </City>
+          <Country>Германия </Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Германия Рейхстаг.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Греция</Name>
+      <Capital>Афины </Capital>
+      <Language>Греческий </Language>
+      <Square>131.96</Square>
+      <Population>10.96</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Greece.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Голубые пещеры</Name>
+          <Year>1897</Year>
+          <Information>Голубые пещеры на мысе Скинари образовались в результате разрушительного действия морских волн. Наибольшую популярность среди туристов приобрел Голубой грот (Лазурная пещера), который находится над маяком. Вход в эту самую большую пещеру был открыт в 1897 году. Солнечный свет, преломляясь, окрашивает воду в лазурный цвет. К пещерам подплывают экскурсионные кораблики.</Information>
+          <City> мыс Скинари</City>
+          <Country>Греция</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Греция Голубые пещеры.jpg</SightIm>
+        </Sight>
+        <Sight>
+          <Name>Ксюша</Name>
+          <Year>1991</Year>
+          <Information>аноплорг</Information>
+          <City>Москва</City>
+          <Country>Греция</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/10354510_1509877179298616_63154385_n.jpg</SightIm>
+        </Sight>
+        <Sight>
+          <Name>Спарта</Name>
+          <Year>XI век до н. э. </Year>
+          <Information>Спарта не имела оборонительных сооружений, потому была не городом, а открытым поселением. От Спарты до наших дней уцелели лишь немногие древние сооружения: римский театр Акрополя; руины святилища Артемиды и арочная галерея, где находились лавочки ремесленников. Археологический музей Спарты хранит коллекцию римской мозаики. Здесь представлены мраморная голова воина, найденная на Акрополе; барельефы с изображенными на них змеями и керамические маски – обязательный элемент ритуальных танцев в храме Артемиды.</Information>
+          <City>Пелопоннес</City>
+          <Country>Греция</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Греция Спарта.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Дания</Name>
+      <Capital>Копенгаген</Capital>
+      <Language>Датский </Language>
+      <Square>43.094</Square>
+      <Population>5.693</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Denmark.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Дворец Марселисборг</Name>
+          <Year>1661</Year>
+          <Information>К важным историческим памятникам Орхуса относится дворец Марселисборг — летняя резиденция короля. История дворца берет свое начало в далеком 1661 году, когда земельные угодья были переданы Г.Марселису — торговцу из Голландии. Собственностью стали управлять два сына голландского торговца. Позже один из них был титулован бароном за особые заслуги перед этой страной. С тех пор дворец получил название Марселисборга.</Information>
+          <City>Орхус</City>
+          <Country>Дания</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Дания Дворец Марселисборг.jpg</SightIm>
+        </Sight>
+        <Sight>
+          <Name>Женский музей</Name>
+          <Year>1857</Year>
+          <Information>Культурным центром Ютландии является небольшой датский городок Орхус. Свой статус город получил благодаря многочисленным историческим достопримечательностям. Большинство уникальных музеев находятся в центре города, одним из таковых является Женский музей.</Information>
+          <City>Орхус</City>
+          <Country>Дания</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Дания Женский музей.jpg</SightIm>
+        </Sight>
+        <Sight>
+          <Name>Музей восковых фигур</Name>
+          <Year>1974</Year>
+          <Information>В самом центре города Копенгагена расположен музей фигур из воска господина Тюссо, у которого своя, довольно давняя история. В 1885 году на месте нынешнего музея был расположен его предшественник, который основал директор парка развлечений Тиволи, господин Ольсен. Первый в Дании музей фигур из воска носил красивое название «Датский паноптикум». Но через пять лет после его открытия, люди потеряли к нему интерес. Поэтому власти Копенгагена вынуждены были закрыть музей.</Information>
+          <City>Копенгаген</City>
+          <Country>Дания</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Дания Музей.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Ирландия </Name>
+      <Capital>Дублин </Capital>
+      <Language>Ирландский, английский </Language>
+      <Square>70.273</Square>
+      <Population>4.593</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Ireland.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Замок Трим</Name>
+          <Year>11 век</Year>
+          <Information>Город Керкира на острове Корфу основали в VIII в. до н. э. греческие колонисты из Коринфа. Много веков Керкира переходила к римлянам, византийцам, венецианцам, туркам, французам и англичанам. Завоеватели, пытаясь сохранить права на город за собой, строили на его территории дворцы и крепости, поэтому в архитектурном облике Керкиры сочетаются культуры разных народов. Самыми знаменитыми сооружениями являются Новая крепость, или Береговая, ( XVII в.) и Старая крепость, или Морская, (XII - XVI вв.)</Information>
+          <City>Графство Мит</City>
+          <Country>Ирландия </Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Ирландия изумр.jpg</SightIm>
+        </Sight>
+        <Sight>
+          <Name>Меллифонтское аббатство</Name>
+          <Year>12 век</Year>
+          <Information>В современности от архитектурного сооружения осталась лишь восьмиугольная башня (в ней монахи умывались). Церковь аббатства появилась в 12 веке. В западной части церкви находится "нижняя" церковь, предназначенная для выставления мощей великомучеников</Information>
+          <City>Изумрудный остров</City>
+          <Country>Ирландия </Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Ирландия изумр.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Исландия</Name>
+      <Capital>Рейкьявик </Capital>
+      <Language>Исландский </Language>
+      <Square>103.13</Square>
+      <Population>0.322</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Iceland.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Ландманналаугар</Name>
+          <Year>нет</Year>
+          <Information>В 20 км от вулкана Гекла лежит район, в котором находится большое количество термальных источников. Он называется Ландманналаугар. Здесь множество природных бассейнов с тёплой водой. Все они оборудованы указателями температуры. Эта вода считается целебной. С её помощью, например, можно исцелить боли в спине, мучительные мигрени, а также стрессы и депрессию. Источники являются доступными для купания круглый год.</Information>
+          <City>Сюдюрланд</City>
+          <Country>Исландия</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Исландия Ландманналаугар.jpg</SightIm>
+        </Sight>
+        <Sight>
+          <Name>Перлан</Name>
+          <Year>1991</Year>
+          <Information>В нескольких километрах от Коуповогюра можно увидеть интересное архитектурное сооружение‚ именуемое Перланом (в переводе с исландского «жемчужина»). Это название отлично подходит для сооружения‚ расположившегося на холме Оскьюлид. Футуристическое сооружение с ошеломляющей и потрясающей историей выполнено в форме цветка. Его сердцевина представлена полусферическим куполом‚ выполненным из прозрачного стекла. Каждый из его лепестков — резервуар с термальной водой. Само сооружение является городской котельней.</Information>
+          <City>Округ Коупавогюр</City>
+          <Country>Исландия</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Исландия П.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Испания</Name>
+      <Capital>Мадрид</Capital>
+      <Language>Испанский </Language>
+      <Square>504.78</Square>
+      <Population>47.37</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/edited-5780.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Музей Прадо</Name>
+          <Year>1819</Year>
+          <Information>Изабелла Браганская, жена Фердинанда VII, основала музей Прадо. Он разместился в 1819 году в качестве Королевского музея. В нем находятся полотна нидерландской, испанской, немецкой, фламандской, итальянской школ. Для получения полного представления о его коллекциях, кроме экспозиций, которые находятся в центральном здании (живопись времен Средневековья до 18 века), надо обязательно познакомиться с дворцом Вильяэрмоса, в котором размещена отличная коллекция собраний живописи Тиссен-Борнемисса, а также с музеем-филиалом, Касоном-дель-Буэн-Ретиро, он расположен на улице Филиппа IV (скульптура и живопись Испании 19 века, и несколько произведений французских и английских живописцев).</Information>
+          <City>Мадрид</City>
+          <Country>Испания</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Испания Прадо.jpg</SightIm>
+        </Sight>
+        <Sight>
+          <Name>Храм Святого Семейства </Name>
+          <Year>1882 </Year>
+          <Information>Храм Святого Семейства – это лучшее творение архитектора Гауди. Храм начал строиться в 1882 году архитектором Виларом, потом его работу продолжил Гауди, им был сильно изменен первоначальный план. Высота центральной башни в здании 170 метров, а у остальных восьми башен высота от 98 до 112 метров. Только один фасад успел завершить Гауди в 1904 году – это фасад Рождества. Образы Веры, Надежды и Милосердия воплощены в его порталах. Сцены рождения Христа, его детство изображане на порталах композиций скульптур.</Information>
+          <City>Барселона</City>
+          <Country>Испания</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Испания Храм.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Италия</Name>
+      <Capital>Рим</Capital>
+      <Language>Итальянский </Language>
+      <Square>301.34</Square>
+      <Population>60.795</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Italy.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Пизанская башня </Name>
+          <Year>XIII</Year>
+          <Information>Когда ближе к концу XIII века возведенная башня-колокольня постепенно начала клониться в сторону, было решено несколько верхних ярусов вместе со звонницей, сместить в отношении нижних ярусов, что также ни дало положительного результата. И по сей день, несмотря на все мероприятия, направленные на укрепление башни, она продолжает крениться. Однако благодаря тщательному контролю со стороны властей, ее двери вновь открылись для посетителей, хотя и установлен лимит на количество туристов. Высота башни составляет 54 метра, диаметр – 15 метров, а фундамент углублен в землю всего на 10 метров. Башня представляет собой круглое семи ярусное сооружение, украшенное прекрасными арками и увенчанное звонницей. Его строительство длилось на протяжении двух веков.</Information>
+          <City>Пиза</City>
+          <Country>Италия</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Италия Пиза.jpg</SightIm>
+        </Sight>
+        <Sight>
+          <Name>Церковь Санта Кроче</Name>
+          <Year>1442 </Year>
+          <Information>Помимо того, что церковь Санта Кроче является единственным непревзойденным носителем ярко выраженного готического стиля, в ее залах хранятся единственные в своем роде произведения искусства. Над созданием данной церкви работал гениальный итальянский архитектор Арнольфо ди Камбио, благодаря которому по своим масштабам эта церковь является одной из самых больших соборов в городе. На протяжении века мастера трудились над созданием этого великолепного архитектурного памятника, и лишь в 1443 году она была освящена. С левой стороны церкви находится легкий портик, состоящий из невесомых арок.</Information>
+          <City>Флоренция</City>
+          <Country>Италия</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Италия цер.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Латвия </Name>
+      <Capital>Рига</Capital>
+      <Language>Латышский</Language>
+      <Square>64.59</Square>
+      <Population>1.958</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Latvia.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Венденский замок</Name>
+          <Year>1206</Year>
+          <Information>Венденский замок – наиболее крупный и сохранившийся замок эпохи средних веков, который принадлежал Ливонскому ордену на латвийской территории. Этот замок находится в центре Цесиса, который исторически известен как город с немецким названием Венден. Собственно, сам город возник вокруг заложенного венедами замка, от которых и получил в наследство свое название. Раннее на месте замка находилась деревянная крепость, которая защищала своих жителей от вторжения неприятелей. </Information>
+          <City>Цесис</City>
+          <Country>Латвия </Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Латвия Венденский замок.jpg</SightIm>
+        </Sight>
+        <Sight>
+          <Name>Елгавский дворец</Name>
+          <Year>1738</Year>
+          <Information>Митавский дворей, более известный как Елгавский, по праву считается самым потрясающим зданием, построенным в стиле барокко, не только в Латвии, но и во всей Балтике. Замок был основана еще в начале восемнадцатого века, в 1738 году. Его основателем является герцог Бирон – герцог Курляндии. Для проектировки замки специально был приглашен знаменитейший барочный мастер из Италии – Ф.Б.Растрелли. Причиной возведения дворца стала смена правящей династии в Герцогстве Курляндия. Герцог Бирон решил возвести дворец как символ нового правящего семейства.</Information>
+          <City>Елгава</City>
+          <Country>Латвия </Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Латвия Елгавский дворец.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Литва</Name>
+      <Capital>Вильнюс</Capital>
+      <Language>Литовский</Language>
+      <Square>65.3</Square>
+      <Population>2.86</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Lithuania.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Тракайский замок </Name>
+          <Year>14-15 век</Year>
+          <Information>Между озерами Лука и Гальве находится небольшой полуостров, на котором гордо стоит Тракайский замок, считавшийся одной из самых неприступных средневековых крепостей. Как и многие фортификационные сооружения того времени, внутри крепости располагался предзамок, где во время атаки неприятеля собиралось войско, а также мирные жители крепости </Information>
+          <City>Тракай</City>
+          <Country>Литва</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Литва Тракайский замок.jpg</SightIm>
+        </Sight>
+        <Sight>
+          <Name>Церковь Святых Константина и Михаила</Name>
+          <Year>1913</Year>
+          <Information>Церковь, освященная в честь святых Константина и Михаила, считается самым «молодым» православным храмом в Вильнюсе, несмотря на то, что освящение церкви состоялось в 1913 году. Трагическая история произошла в августе 1915 года, когда во время эвакуации церковных ценностей, вагон, в котором перевозили сакральные предметы, был уничтожен в результате взрыва бомбы. В этом же году немцы устроили в полуразрушенной церкви место ареста для всех, кто нарушал комендантский час. Не меньше пострадало здание и во время Второй Мировой Войны, когда при штурме города советскими войсками взрывом бомбы была полностью разрушена одна из стен. В настоящее время церковь воссоздана практически в первоначальном виде. </Information>
+          <City>Вильнюс</City>
+          <Country>Литва</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Литва Церковь Святых Константина и Михаила.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Лихтенштейн</Name>
+      <Capital>Вадуц</Capital>
+      <Language>Немецкий</Language>
+      <Square>0.16</Square>
+      <Population>0.36</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Liechtenstein.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Замок Вадуц</Name>
+          <Year>14 век</Year>
+          <Information>Княжество Лихтенштейн по праву гордится своей многовековой историей, многие свидетельства которой до сих пор радуют глаз гостей страны. К ним относится и замок Вадуц — ныне официальная резиденция правящей династии. Нерушимые стены центральной башни археологи относят к 12 веку, хотя документальных свидетельств о годе основания замка не сохранилось. Первое упоминание о нем датируется 14 веком: это документ о передаче собственности, означающий, что уже тогда цитадель была обитаема и имела немалую ценность. В средние века появилась первая пристройка: часовня Св. Анны, украсившая архитектурный ансамбль с восточной стороны.</Information>
+          <City>Вадуц</City>
+          <Country>Лихтенштейн</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Лихтенштейн замок вадуц.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Люксембург</Name>
+      <Capital>Люксембург</Capital>
+      <Language>Французский, немецкий </Language>
+      <Square>2.6</Square>
+      <Population>0.576</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Liechtenstein.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Замок Вианден</Name>
+          <Year>13 век</Year>
+          <Information>Официально история замка начинается в 11 столетии. В сохранившихся исторических документах, самые ранние упоминания о замке и его владельцах относятся к 1090 году. Доподлинно установлено имя первого хозяина замка. Это граф Вианденский Бертольф. Его наследники расширяли родовые владения. Их богатство и власть неуклонно возрастали и достигли своего пика при графе Вианденском Генрихе в начале 13-го века. </Information>
+          <City> Кантон Вианден</City>
+          <Country>Люксембург</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/люксем Замок Вианден.jpg</SightIm>
+        </Sight>
+        <Sight>
+          <Name>Часовня Le Castel</Name>
+          <Year>12 век</Year>
+          <Information>На вершине скалистого плато, которое пересекает граница между Францией и Люксембургом, недалеко от городка Мондорф-ле-Бен, расположена старинная часовня. Местное население называет её Le Castel – Замок. С 16 столетия он стал носить название братства Св. Бенуа и превратился в паломнический центр. Религиозные люди верили в то, что молитвы в этом месте помогают навсегда избавиться от головных и зубных болей.</Information>
+          <City>Мондорф-ле-Бен</City>
+          <Country>Люксембург</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/люксем Часовня Le Castel.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Македония</Name>
+      <Capital>Скопье </Capital>
+      <Language>Македонский </Language>
+      <Square>25.333</Square>
+      <Population>2057</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Macedonia.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Крепость Кале</Name>
+          <Year>1 век</Year>
+          <Information>Национальная гордость столицы Македонии -древнейшая крепость под названием Кале, основы которой датируются I веком нашей эры. Каменные крепостные стены, мощеные дорожки, благоустроенный парк – в Кале есть все, что необходимо для прекрасного отдыха. Попасть в крепость можно пешком, двигаясь от площади Македонии.</Information>
+          <City>Скопье</City>
+          <Country>Македония</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Македония Кале.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Мальта</Name>
+      <Capital>Валлетта</Capital>
+      <Language>Мальтийский,английский</Language>
+      <Square>0.316</Square>
+      <Population>0.429</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Malta.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Цитадель и собор Виктории</Name>
+          <Year>17 век</Year>
+          <Information>Цитадель была построена в столице острова Гозо – Виктории в 17 столетии, чтобы защитить город от набегов турок и пиратов. Её строительство осуществлялось на основе последних инженерных достижений в области фортификации, а финансировал его король Испании Филипп II. Цитадель долго оставалась единственной надёжной защитой островитян. Внутренняя часть её представляет собой каменный лабиринт из крепостных стен, площадей и лестниц. </Information>
+          <City>о. Гозо</City>
+          <Country>Мальта</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Мальта Цитадель и собор Виктории.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Молдова</Name>
+      <Capital>Кишинев </Capital>
+      <Language>Молдавский </Language>
+      <Square>33.85</Square>
+      <Population>3.55</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Moldova.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Бендерская крепость</Name>
+          <Year>1538</Year>
+          <Information>Бендерская крепость высится над Днестром как свидетельство былого могущества Османской империи и воплощение военной истории Приднестровья. Ее древние стены пережили осады, поджоги, штурмы и бесчисленное количество реконструкций, она десятки раз переходила из рук одной военной державы в руки другой, но продолжала оставаться одной из самых нерушимых цитаделей региона. Монументальная, будто корнями вросшая в высокий правый берег Днестра, она все же не лишена своеобразного изящества: башни венчают конусообразные красные крыши, а зубчатые внешние стены, хоть и местами разрушенные, строго очерчивают горизонт.</Information>
+          <City>Кишинев</City>
+          <Country>Молдова</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Молдова Бендерская крепость.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Монако</Name>
+      <Capital>Монако</Capital>
+      <Language>Французский </Language>
+      <Square>0.002</Square>
+      <Population>0.038</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Monaco.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Монте-Карло</Name>
+          <Year>1215</Year>
+          <Information>На вершине серой скалы, на том месте, где когда-то была построена генуэзцами в 1215 году крепость, стоит княжеский дворец. Посетив дворец, путешественник не только приобщится к культуре Монако, он совершит прогулку в прошлое. Во дворце вниманию посетителей предоставлена итальянская галерея, отделанный разноцветным деревом салон Мазарини, салон короля Людовика XV. А также здесь можно увидеть тронный зал с великолепным, большого размера, камином, башню Святой Марии, построенную из белого камня, внутренний двор, который уложен разноцветной галькой. В этом дворе, где рисунок гальки имеет геометрическую фигуру, проводятся различные концерты под открытым летним небом. </Information>
+          <City>Монако</City>
+          <Country>Монако</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Монако Монте.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Нидерланды </Name>
+      <Capital>Амстердам</Capital>
+      <Language>Нидерландский</Language>
+      <Square>41.543</Square>
+      <Population>17.022</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Netherlands.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Замок-дворец Ло</Name>
+          <Year>1615</Year>
+          <Information>В окрестностях Апельдорна расположен дворец Ло. Он был возведен в 1685 году королём Вильямом III. В течение более чем трёх столетий он служил многим поколениям королевской семьи. Его использовали то, как летнюю резиденцию, то, как охотничий замок для представителей королевской династии Нассау-Оранских, а в новейшее время главы республики Нидерланды. Во время последних реставрационных работ, снаружи и внутри здания были демонтированы элементы отделки, относящиеся к 19 веку, и полностью восстановлен облик здания периода 17 столетия.</Information>
+          <City>Апелдорн</City>
+          <Country>Нидерланды </Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Нидерланды Ло.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Норвегия</Name>
+      <Capital>Осло</Capital>
+      <Language>Норвежский </Language>
+      <Square>385.19</Square>
+      <Population>5.064</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Norway.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Королевский дворец</Name>
+          <Year>1825</Year>
+          <Information>Начало строительства королевской резиденции в главном городе страны датируется 1825 годом. Работы по созданию этого архитектурного шедевра длились около 23 лет, и не мудрено, ведь число комнат в здании равняется 173, а площадь парковой зоны составляет несколько гектаров земли. В настоящее время дворец служит постоянной резиденцией короля Харольда V, о чем свидетельствует развивающийся над зданием штандарт монарха. </Information>
+          <City>Осло</City>
+          <Country>Норвегия</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Норвегия КОРОЛЕВСКИЙ ДВОРЕЦ.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Польша </Name>
+      <Capital>Варшава </Capital>
+      <Language>Польский </Language>
+      <Square>312.68</Square>
+      <Population>38.627</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Poland.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Ратуша</Name>
+          <Year>1379</Year>
+          <Information>атуша находится в местности Старого города, в самом красивом месте и самом посещаемом туристами. Данное здание возводили в период с 1379 по 1492 годы. Архитектором сооружения был Антонио Ван Обергенн. На большой высоте над домами расположена смотровая башня высота, которой составляет 80 метров. Украшением интерьера двора занимались художники из Нидердандов. Выполнен он в стиле голландского маньеризма. </Information>
+          <City>Гданьск</City>
+          <Country>Польша </Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Польша ратуша в гданьске.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Португалия </Name>
+      <Capital>Лиссабон </Capital>
+      <Language>Португальский </Language>
+      <Square>92.151</Square>
+      <Population>10.799</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Portugal.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Лиссабонская Ривьера</Name>
+          <Year>18 век</Year>
+          <Information>В конце 18 столетия по приказу королевы Марии І был построен дворец, архитектурный стиль которого был выдержан полностью во вкусе хозяйки: изящество сочеталось с простотой, скромность с великолепием, богатство с утонченностью. Свое название этот особняк, построенный для проживания членов королевской фамилии, получил от названия города Келуш, который находится неподалеку от Лиссабона. Многие исследователи истории отмечают внешнее сходство этого здания с Версалем, вероятно из-за того, что оба сооружения выполнены в классическом стиле рококо с его утонченными нежными линиями и, в то же время, красочными фасадами.</Information>
+          <City>Лиссабон </City>
+          <Country>Португалия </Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Португалия Лиссабонская Ривьера.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Россия </Name>
+      <Capital>Москва</Capital>
+      <Language>Русский </Language>
+      <Square>17125.2</Square>
+      <Population>146.8</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Russia.jpg</Flag>
+      <LSight />
+    </Country>
+    <Country>
+      <Name>Румыния </Name>
+      <Capital>Бухарест</Capital>
+      <Language>Румынский</Language>
+      <Square>238.4</Square>
+      <Population>19.511</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Romania.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Бран</Name>
+          <Year>14 век</Year>
+          <Information>Изначально Бран, как и другие замки Европы, служил для защиты городка. Его коридоры и залы образуют лабиринт. Видимо, для того, чтобы в нем заблудился непрошенный гость. Ведь свои люди знают все ходы и лазейки. </Information>
+          <City>Брашов</City>
+          <Country>Румыния </Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Румыния Бран.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Сан-Марино</Name>
+      <Capital>Сан-Марино</Capital>
+      <Language>Итальянский </Language>
+      <Square>0.061</Square>
+      <Population>0.033</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/San Marino.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Городские стены и ворота</Name>
+          <Year>14 век</Year>
+          <Information>Город «San-Marino» расположился за тремя поясами огибающих его крепостных стен, построенных в разное время. Первый пояс укрепления «Гуаита» - это внешние стены крепости, пролегающие до самой скалы, на которой стоит церковь «Пьеве». В основном стены первого пояса служили защитой для системы водоснабжения города. </Information>
+          <City>Сан-Марино</City>
+          <Country>Сан-Марино</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Сан-Марино городские стены и ворота.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Сербия </Name>
+      <Capital>Белград</Capital>
+      <Language>Сербский</Language>
+      <Square>88.4</Square>
+      <Population>7.041</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Serbia.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Башня черепов Челе-Кула</Name>
+          <Year>1809</Year>
+          <Information>Эта страшноватая достопримечательность находится в восточной части Ниша. Она представляет собой башню, которая сложена по большей части из человеческих черепов. В 1809 г. в битве при Чегаре во время Первого сербского восстания против турок революционеры были атакованы турецкими войсками на холме Чегар близ Ниша. Чтобы не быть захваченным в плен и посаженными на кол, как тогда турки казнили своих пленников, командир повстанцев разрядил свой пистолет в пороховой склад, и взрыв уничтожил и сербов, и турок. После этого Хуршид-паша, Великий визирь Ниша, приказал построить башню из сербских черепов, кожу с которых содрали, набили соломой и отправили султану. Выстроенная конструкция оказалась три с лишним метра высотой и содержала 952 сербских черепа, которые в 14 рядов были вделаны с четырёх сторон башни</Information>
+          <City>Ниш</City>
+          <Country>Сербия </Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Сербия Башня черепов Челе-Кула.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Словакия </Name>
+      <Capital>Братислава</Capital>
+      <Language>Словацкий</Language>
+      <Square>49.03</Square>
+      <Population>5.4</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Slovakia.jpg</Flag>
+      <LSight />
+    </Country>
+    <Country>
+      <Name>Словения </Name>
+      <Capital>Любляна</Capital>
+      <Language>Словенский</Language>
+      <Square>20.253</Square>
+      <Population>2.058</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Slovenia.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Дворец семинарии</Name>
+          <Year>17 век</Year>
+          <Information>Ансамбль строений Кафедрального собора в Любляне является уникальным архитектурным памятником, ведь он состоит из нескольких зданий, построенных в разное время и разными архитекторами. Одним из этих зданий является дворец семинарии, который находится прямо за Кафедральным собором. Его создателем является Карло Мартинуции, который разрабатывал проект дворца в начале семнадцатого века.</Information>
+          <City>Любляна</City>
+          <Country>Словения </Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Словения дворец.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Украина</Name>
+      <Capital>Киев </Capital>
+      <Language>Украинский </Language>
+      <Square>603.55</Square>
+      <Population>42.388</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Ukraine.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Латинский собор (Архикафедральная базилика Успения Пресвятой Девы Марии) </Name>
+          <Year>1360</Year>
+          <Information>Единственным памятником архитектуре во Львове, который построен в готическом стиле, является Кафедральный собор Успения Пресвятой Девы Марии. Он был основан в 1360 году. Автором проекта собора является Петр Шехер. Для строительства был специально приглашен лучший львовский мастер по имени Николай Ничко. В самом начале строительства была проведена торжественная церемония, на которой был заложен первый камень собора. Сделал это никто иной как король Польши Казимир Великий.</Information>
+          <City>Львов</City>
+          <Country>Украина</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Украина Латинский собор.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Финляндия</Name>
+      <Capital>Хельсинки</Capital>
+      <Language>Финский </Language>
+      <Square>338.43</Square>
+      <Population>5.56</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Finland.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Ландшафтный парк "Исопуйсто"</Name>
+          <Year>1799</Year>
+          <Information>На территории восемь гектаров вокруг церкви Святого Николая раскинулся Исопуйство, благоухающий восхитительный ландшафтный парк. Он был построен в 1799-1801 годах Перрином Яковом, русским аритектором, в стиле некоклассицизма. Церковь популярна ценными иконами. Посетителей перед входом в нее своей красотой удивляет цветущая клумба с многолетними растениями, роскошными тюльпанами. </Information>
+          <City>Котка</City>
+          <Country>Финляндия</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Финляндия парк.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Франция </Name>
+      <Capital>Париж </Capital>
+      <Language>Французский </Language>
+      <Square>674.69</Square>
+      <Population>66.736</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/France.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Замок Шенонсо</Name>
+          <Year>13 век</Year>
+          <Information>Замок Шенонсо имеет богатую историю. С XIII века до наших дней у него было много владельцев. Построил его сеньор де Марк, а позднее это поместье купил интендант Тома Бойе, который служил у трех королей. Он перестроил замок и парадный двор. Однажды в 1538 году в замок приехали Франциск I и Карл V. Шенонсо так понравился королю, что Антуану, сыну Тома Бойе пришлось продать его Франциску I. Фаворитка Генриха II Диана де Пуатье получила замок в подарок и по ее приказу на правом берегу реки были высажены фруктовые деревья </Information>
+          <City>Долина Луары</City>
+          <Country>Франция </Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Франция замок.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Хорватия</Name>
+      <Capital>Загреб</Capital>
+      <Language>Хорватский </Language>
+      <Square>56.6</Square>
+      <Population>4.246</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Croatia.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Амфитеатр</Name>
+          <Year>1 век</Year>
+          <Information>Самым популярным памятником старой части города является амфитеатр. Построили его еще римляне, когда правил император Веспасиан. Датируют это событие I веком нашей эры. Несмотря на такую древность здания, в нем и на сегодняшний день проводят различные фестивали кино и театра, ставят спектакли. Вмещаемость амфитеатра еще в древности достигала до 23 тысяч человек. </Information>
+          <City>Пула</City>
+          <Country>Хорватия</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Хорватия амфитеатр.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Черногория </Name>
+      <Capital>Подгорица</Capital>
+      <Language>Черногорский</Language>
+      <Square>13.81</Square>
+      <Population>0.622</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Montenegro.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Скадарское озеро</Name>
+          <Year>нет</Year>
+          <Information>Скадарское озеро — национальный парк, расположившийся на территории двух стран — Албании и Черногории. Основан он был в 1983 году. Величественный водоем поражает своей красотой, богатством рыбы, большими популяциями птиц, обитающих здесь. На его живописных лугах можно увидеть множество старинных поселков, а на островах — крепостные руины и церкви. Все это не может не привлекать внимание туристов, желающих ознакомиться с красотами черногорского озера. Особенно популярны дневные экскурсии, которые можно совершить из любого уголка Черногории. </Information>
+          <City>Подгорица</City>
+          <Country>Черногория </Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Черногория озеро.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Чехия </Name>
+      <Capital>Прага </Capital>
+      <Language>Чешский </Language>
+      <Square>78.9</Square>
+      <Population>10.538</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Czech Republic.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Карлов мост</Name>
+          <Year>1357</Year>
+          <Information>Одним из самых знаменитых пражских мостов является Карлов мост длиной 515 метров, шириной – 10 метров, строительство, которого началось в 1357 году по указу короля Карла IV.До этого с 932 года здесь был деревянный мост, который назывался Джудит, в честь любимой жены князя Вацлава I, построившего этот мост. Архитектором Карлова моста был Петер Парлерж. Начинается мост от Староместской башни. На этой башне, выстроенной в конце XIV века, есть смотровая площадка, с которой открывается великолепная панорама старой Праги. Архитектором башни также был Петер Парлерж. Восточную сторону башни украшают статуи патронов земель Чехии. </Information>
+          <City>Прага</City>
+          <Country>Чехия </Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Чехия.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Швейцария </Name>
+      <Capital>Берн</Capital>
+      <Language>Немецкий, французский </Language>
+      <Square>41.28</Square>
+      <Population>7.996</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Switzerland.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Городской мост Миттлере Брюкке</Name>
+          <Year>1225</Year>
+          <Information>Наиболее старый и наиболее популярный среди туристических достопримечательностей мост Базеля носит название Миттлере Брюкке. Его строительство было окончено в 1225 году, и в течение нескольких веков он был единственным сооружением, по которому можно было перебраться с одного берега реки на другой. В дальнейшем по мере расширения города стали появляться новые мосты, но и именно описываемый нами имеет наиболее интересную и в тоже время зловещую историю.</Information>
+          <City>Базель</City>
+          <Country>Швейцария </Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Швейцария Городской мост Миттлере Брюкке.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Швеция</Name>
+      <Capital>Стокгольм </Capital>
+      <Language>Шведский</Language>
+      <Square>447.435</Square>
+      <Population>10.009</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Sweden.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Музей-усадьба Карла Миллеса</Name>
+          <Year>1875</Year>
+          <Information>Недалеко от Стокгольма на острове Лидинго находится музей-усадьба самого известного скульптора Швеции Карла Миллеса. Здесь можно увидеть самые выдающиеся его скульптуры, в том числе знаменитую «Рука Бога», которую часто можно увидеть на иллюстрациях различных изданий. Большинство работ этого мастера находится в известных музеях Швеции и США, поэтому в этом музее установлены точные копии. Кроме личных работ Миллеса в музее экспонируются артефакты Древней Греции и Древнего Рима, а также коллекция уникальных шедевров Ренессанса и Средневековья. Усадьбу окружает замечательный сад, украшенный цветочными клумбами и фонтанами здесь также много скульптур Карла Миллера. Из этого сада открывается восхитительный вид на Стокгольм.</Information>
+          <City>Стокгольм</City>
+          <Country>Швеция</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Швеция Музей-усадьба Карла Миллеса.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+    <Country>
+      <Name>Эстония</Name>
+      <Capital>Таллин</Capital>
+      <Language>Эстонский </Language>
+      <Square>45.227</Square>
+      <Population>1.315</Population>
+      <Flag>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgFlag/Estonia.jpg</Flag>
+      <LSight>
+        <Sight>
+          <Name>Замок Лайузе</Name>
+          <Year>XIV век</Year>
+          <Information>Основание замка Лайузе принято датировать XIV веком, а его основателем считают Ливонский орден. Строили замок целый век и приспособили его потом для хранения и использования огнестрельного оружия. В первую очередь была построена основная часть с окружной стеной. Стена имела форму трапеции. Вначале она имела высоту в 9 метров и почти метровую толщину. В дальнейшем эти параметры были немного увеличены. Сюда по сохранившимся частям высота башен доходила до 22 метров, а толщина достигала 4 метров. </Information>
+          <City>Йыгева</City>
+          <Country>Эстония</Country>
+          <SightIm>C:\Users\User\Desktop\Учеба\Прога 2.0\Information system _Countries of Europe\Information system _Countries of Europe\bin\Debug/imgSight/Эстония Замок Лайузе.jpg</SightIm>
+        </Sight>
+      </LSight>
+    </Country>
+  </ListCou>
+</ListCountries>
